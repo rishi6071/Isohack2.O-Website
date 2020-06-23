@@ -1,0 +1,277 @@
+@charset 'utf-8';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #182153;
+    box-sizing: border-box;
+}
+
+/* Bluish Color #182153 */
+
+::selection {
+    background-color: grey;
+    color: white;
+    -ms-color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/***************** Banner *****************/
+div#banner-outer {
+    background-color: #182153;
+    padding: 20px;
+}
+
+div#banner-inner {
+    width: 50%;
+    padding: 30px 20px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+div#banner-inner p {
+    line-height: 1.9;
+}
+
+@media screen and (max-width:768px) {
+    div#banner-inner {
+        width: 65%;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    div#banner-inner {
+        width: 95%;
+        padding: 20px;
+    }
+    div#banner-inner p {
+        font-size: 0.8rem;
+    }
+}
+.myName {
+    color: #9c27b0;
+}
+
+
+/***************** Experience & Education & Community *****************/
+.thematic-break {
+    border-bottom: 1px solid #182153;
+}
+
+.thematic-position {
+    border-width: 0.5px;
+}
+
+/* In Experience Portion */
+.date-position {
+    text-align: center;
+}
+
+/* In Education, Community */
+.duration-position {
+    float: right;
+}
+
+.tech-logo {
+    width: 45%;
+    height: 60px;
+    display: block;
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:992px) {
+    .amstech-logo {
+        object-fit: contain;
+    }
+    .tech-logo {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .duration-position {
+        float: none;
+        text-align: center;
+    }
+    .tech-logo {
+        width: 70%;
+        height: 120px;
+        margin: auto;
+        object-fit: contain;
+    }
+    .org-details {
+        text-align: center;
+    }
+}
+
+.exp-edu-details {
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+a.shivlingWeb {
+    text-decoration: none;
+    color: #182153;
+}
+
+a.shivlingWeb:hover {
+    opacity: 0.6;
+}
+
+
+/***************** Skills *****************/
+.tech-field {
+    background-color: #182153;
+    width: 250px;
+}
+
+.tech-field p {
+    padding: 10px;
+}
+
+.tech-field span {
+    padding-left: 8px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.float {
+    margin-left: auto;
+}
+
+@media screen and (max-width:768px) {
+    .float {
+        margin-right: auto;
+    }
+    .float-center {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .tech-field {
+        width: 85%;
+    }
+}
+
+.tech-field img {
+    border-radius: 2px;
+    height: 27px;
+    width: 27px;    
+}
+
+
+/***************** Contact Me *****************/
+::placeholder {
+    font-size: small;
+}
+
+form#msgeForm input {
+    font-size: small;
+}
+
+form#msgeForm .btn-primary {
+    background-color: #182153;
+    color: white;
+    border-color: #182153;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    -webkit-box-shadow: -1px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: -1px 5px 15px rgba(0,0,0,0.4);
+    box-shadow:-1px 5px 15px rgba(0,0,0,0.4);
+}
+
+.contact-details {
+    line-height: 0.4;
+}
+
+a.contact-link {
+    text-decoration: none;
+}
+
+
+/***************** Footer *****************/
+footer {
+    margin-bottom: 0;
+    background-color:dimgray;
+}
+
+footer p {
+    color: gainsboro;
+    padding-left: 5%;
+}
+
+a.social-link {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.social-icon:hover {
+    opacity: 0.5;
+}
+
+
+/****************** Projects Page ******************/
+.active {
+    font-weight: bold;
+}
+
+.project-column {
+    padding: 0 5%;
+}
+
+.source-btn {
+    border-radius: 2px;
+    float: right;
+    margin-right: 5%;
+}
+
+
+span.projects-head {
+    vertical-align: -7px;
+}
+
+ul.projects li {
+    padding-top: 25px;
+    font-size: 0.9em;
+}
+
+.how-it-looks-btn {
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    font-size: x-small;
+    border-radius: 60px;
+}
+
+.tech-used {
+    margin-top: 30px;
+    font-size: small;
+    line-height: 0.5;
+}
+
+.tech-used p:first-child {
+    font-size: small;
+}

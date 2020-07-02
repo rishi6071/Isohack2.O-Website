@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart | Be The Best</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Cart where Selected products will show" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <!-- Title Bar Icon -->
+    <link rel="icon" type="image/ico" href="img/Logo/log.jpg" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom_css/indexStyle.css" />
+    <link rel="stylesheet" href="css/custom_css/preloader.css" />
+    <link rel="stylesheet" href="css/custom_css/navbar.css" />
+    <link rel="stylesheet" href="css/custom_css/footer.css" />
+
+    <style>
+        /* Product QUantity Button */
+        .pdtQty{
+            border-right:none;
+            border-left:none;
+            border-color:darkseagreen;
+        }
+        .myQtyBt{
+            border-radius:0;
+        }
+
+        .n{
+            vertical-align: middle;
+        }
+
+        .transitionBtn {
+            transition-duration: 0.5s;
+        }
+    </style>
+  </head>    
+  <body>
+    <!-- Page Preloader -->
+    <div class="loading"></div>
+
+    <!-- Navigation Bar Start -->
+    <header class="sticky-top">
+      <div>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <a class="navbar-brand text-success websiteName" href="index.html">
+                <img src="img/Logo/log.jpg" alt="Logo" class="brand-logo"/>
+                Be The Best </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto setNav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html" data-toggle="tooltip" title="Diff. Kinds of Product">
+                        Shop</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="authors.html" data-toggle="tooltip" title="About Famous Authors">
+                          Authors</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help
+                      </a>
+                      <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="contact.html" title="Contact Us">Contact Us</a>
+                        <a class="dropdown-item" href="about.html" title="Something About us">About Us</a>
+                        <a class="dropdown-item" href="FAQs.html" title="Expected Q/A">FAQs</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <!-- <img src="img/Icons/account.png" alt="Acc." height="25px" width="25px" /> -->
+                          Profile
+                    </a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="myProfile.html"><i class='fas fa-user' style='font-size:20px'></i>
+                          Edit Profile</a>
+                      <a class="dropdown-item active" href="cart.html">My Cart</a>                            
+                      <a class="dropdown-item" href="myOrders.html">My Orders</a>                            
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">LOG OUT</a>
+                    </div>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 setSearch">
+                  <input class="form-control mr-sm-2" type="search" title="Search Here" 
+                      placeholder="Author/Book Name" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+          </nav>
+      </div>
+    </header>
+    <!-- Navigation Bar End -->
+
+    <!-- Cart Heading Start -->
+    <section>
+      <div class="container-fluid py-4 bgPageHeading">
+          <h6 class="text-dark ml-5"><a href="index.html" class="text-primary">Home</a> / My Cart </h6>
+      </div>
+    </section>
+    <!-- Cart Heading End -->
+
+    <!-- Cart Table Start -->
+    <section>
+        <div class="container mt-5 mb-3 table-responsive">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th class="p-4">Image</th>
+                        <th class="p-4">Product</th>
+                        <th class="p-4">Price</th>
+                        <th class="p-4">Quantity</th>
+                        <th class="p-4">Total</th>
+                        <th class="p-4">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/product/hcPart1.jpg"  height="150px" alt="Product" /></td>
+                        <td style="vertical-align: middle;">Concept of Physics (Part-1)<br/>HC Verma</td>
+                        <td style="vertical-align: middle;">Rs.800</td>
+                        <td style="vertical-align: middle;">
+                            <div style="width:110px;" class="mx-auto">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" data-type="minus" data-field="" 
+                                                class="quantity-left-minus btn btn-outline-info btn-number myQtyBt rounded-left" >
+                                            <span class="glyphicon glyphicon-minus h5">-</span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number text-center pdtQty"
+                                         value="1" min="2" max="50">
+                                    <span class="input-group-btn">
+                                        <button type="button" data-type="plus" data-field=""
+                                                class="quantity-right-plus btn btn-outline-info btn-number myQtyBt rounded-right" >
+                                            <span class="glyphicon glyphicon-plus h5">+</span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="vertical-align: middle;">Rs.800</td>
+                        <td style="vertical-align: middle;"><button class="btn btn-secondary">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/product/hcPart2.jpg"  height="150px" alt="Product" /></td>
+                        <td style="vertical-align: middle;">Concept of Physics (Part-2)<br/>HC Verma</td>
+                        <td style="vertical-align: middle;">Rs.700</td>
+                        <td style="vertical-align: middle;">
+                            <div style="width:110px;" class="mx-auto">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" data-type="minus" data-field="" 
+                                                class="quantity-left-minus btn btn-outline-info btn-number myQtyBt rounded-left" >
+                                            <span class="glyphicon glyphicon-minus h5">-</span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number text-center pdtQty"
+                                         value="1" min="2" max="50">
+                                    <span class="input-group-btn">
+                                        <button type="button" data-type="plus" data-field=""
+                                                class="quantity-right-plus btn btn-outline-info btn-number myQtyBt rounded-right" >
+                                            <span class="glyphicon glyphicon-plus h5">+</span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="vertical-align: middle;">Rs.700</td>
+                        <td style="vertical-align: middle;"><button class="btn btn-secondary">x</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Cart Table End -->
+
+    <!-- Coupen and Cart-Total Start -->
+    <section>
+        <div class="container mb-5 managePageDetails">
+            <div class="row">
+
+                <div class="col-md-7 col-12">
+                    <div class="pl-3 row">
+                        <button class="btn btn-secondary mr-3 px-3 mt-3">
+                            <small class="myButton">UPDATE CART</small>
+                        </button>
+                        <a href="shop.html" class="btn btn-outline-secondary px-5 mt-3 transitionBtn">
+                            <small class="myButton">CONTINUE SHOPPING</small>
+                        </a>
+                    </div>
+
+                    <!-- Apply Coupon Start -->
+                    <div class="mt-5 pt-3 container">
+                        <h4>Coupon</h4>
+                        <p class="text-secondary">Enter your coupon code if you have one.</p>
+
+                        <!-- Coupon Field -->
+                        <div>
+                            <form class="form-inline">
+                                <input type="text" placeholder="Coupon Code" class="form-control mr-3" style="width:57%;" />
+                                <button class="btn btn-primary px-4"><small class="myButton">APPLY</small></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Apply Coupon End -->
+                </div>
+
+                <div class="col-md-5 col-12 mt-5">
+                    <h5 class="float-right" style="letter-spacing: 2px;">CART TOTALS</h5>
+
+                    <table class="table table-borderless mt-5">
+                        <tbody class="text-secondary text-center">
+                            <tr>
+                                <td>Subtotal
+                                <td class="float-right">Rs.1500</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td class="float-right">Rs.1500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="checkout.html" class="btn btn-primary btn-block py-3 myButton" 
+                        style="word-spacing: 3px;">PROCEED TO CHECKOUT</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Coupen and Cart-Total End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="Container bg-dark text-white pb-2">
+            <div class="pt-5">
+                <h1 class="text-center">
+                    <a href="index.html" class="link text-white footerHeading">Be The Best</a>
+                </h1>
+                <hr class="w-25 mx-auto mt-0" id="thematicBreak" >
+                <br><br>    
+            </div>
+            <div class="social-links-warp">
+                <div class="container">
+                    <div class="social-links mx-auto text-center">
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                                <a href="" class="instagram socialMedia">
+                                    <img src="img/Icons/instagram.png" alt="Insta" class="footerIcons rounded-circle" />
+                                    <span class="socialLinks"> Instagram</span>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-6  mt-3">
+                                <a href="" class="google-plus socialMedia">
+                                    <img src="img/Icons/google-plus.png" alt="G+" class="footerIcons" />
+                                    <span class="socialLinks"> G+plus</span>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                                <a href="" class="pinterest socialMedia">
+                                    <img src="img/Icons/pinterest.png" alt="Pinterest" class="footerIcons" />
+                                    <span class="socialLinks"> Pinterest</span>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                                <a href="" class="facebook socialMedia">
+                                    <img src="img/Icons/facebook.png" alt="fb" class="footerIcons" />
+                                    <span class="socialLinks"> Facebook</span>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                                <a href="" class="twitter socialMedia">
+                                    <img src="img/Icons/twitter.png" alt="Twitter" class="footerIcons" />
+                                    <span class="socialLinks"> Twitter</span>
+                                </a>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                                <a href="" class="youtube socialMedia">
+                                    <img src="img/Icons/youtube.png" alt="youtube" class="footerIcons" />
+                                    <span class="socialLinks"> Youtube</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+                    <p class="text-white text-center mt-5 pb-2 myRight">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+            </div>  
+        </div>
+    </footer>
+    <!-- Footer End -->
+    
+    <!-- ================ JavaScripts & JQuery ===================== -->
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+        crossorigin="anonymous">
+
+    <script src="js/myFaq.js"></script>        
+    <script src="js/myCartAndProduct.js"></script>
+
+    <!-- Preloader Script Start -->
+    <script src="js/preloader.js"></script>
+    <!-- Preloader Script End -->
+  </body>
+</html>

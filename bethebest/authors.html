@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authors | Be The Best</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Something About Famous Authors" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <!-- Title Bar Icon -->
+    <link rel="icon" type="image/ico" href="img/Logo/log.jpg" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom_css/indexStyle.css" />
+    <link rel="stylesheet" href="css/custom_css/preloader.css" />
+    <link rel="stylesheet" href="css/custom_css/navbar.css" /> 
+    <link rel="stylesheet" href="css/custom_css/footer.css" />
+    
+    <style>
+        #bgAuthorHeading{
+            background-color:rgba(211,211,211,0.3);
+        }
+
+        a.authorName{
+            color:lightslategray;
+        }
+        a.authorName:hover{
+            color:black;
+        }
+
+        .authorAbout{
+            text-indent:3%;
+        }
+
+        .myRight{
+          font-size:15px;
+        }
+
+        .media {
+            margin-top: 20px;
+            border: 1px solid rgba(128,128,128,0.13);
+            border-radius: 10px;
+        }
+    </style>
+  </head>    
+  <body>
+    <!-- Page Preloader -->
+    <div class="loading"></div>
+
+    <!-- Navigation Bar Start -->
+    <header class="sticky-top">
+      <div>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <a class="navbar-brand text-success websiteName" href="index.html">
+                <img src="img/Logo/log.jpg" alt="Logo" class="brand-logo"/>
+                Be The Best </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto setNav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html" data-toggle="tooltip" title="Diff. Kinds of Product">
+                        Shop</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="authors.html" data-toggle="tooltip" title="About Famous Authors">
+                          Authors</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help
+                      </a>
+                      <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">                 
+                        <a class="dropdown-item" href="contact.html" title="Contact Us">Contact Us</a>
+                        <a class="dropdown-item" href="about.html" title="Something About us">About Us</a>
+                        <a class="dropdown-item" href="FAQs.html" title="Expected Q/A">FAQs</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Profile
+                          <!-- <img src="img/Icons/account.png" alt="Acc." height="25px" width="25px" /> -->
+                    </a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="myProfile.html"><i class='fas fa-user' style='font-size:20px'></i>
+                          Edit Profile</a>
+                      <a class="dropdown-item" href="cart.html">My Cart</a>
+                      <a class="dropdown-item" href="myOrders.html">My Orders</a>                            
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">LOG OUT</a>
+                    </div>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 setSearch">
+                  <input class="form-control mr-sm-2" type="search" title="Search Here" 
+                      placeholder="Author/Book Name" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+          </nav>
+      </div>
+    </header>
+    <!-- Navigation Bar End -->
+
+    <!-- FamousAuthor Heading Start -->
+    <section>
+      <div class="container-fluid py-4 bgPageHeading">
+          <h6 class="text-dark ml-5"><a href="index.html" class="text-primary">Home</a> / Famous Authors
+      </div>
+    </section>
+    <!-- FamousAuthor Heading End -->
+
+    <!-- Authors Start -->
+    <div class="container my-5">
+        <div class="media p-3 mb-2">
+            <img src="img/authors/stanley.jpg" alt="Stan Lee" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://en.wikipedia.org/wiki/Stan_Lee" target="_blank" class="link authorName">Stan Lee</a> : </h4>
+              <p class="authorAbout">Stan Lee (December 28, 1922 – November 12, 2018) was an American comic book 
+                  writer, editor, publisher, and producer. He rose through the ranks of a family-run 
+                  business to become Marvel Comics' primary creative leader for two decades, leading 
+                  its expansion from a small division of a publishing house to a multimedia corporation 
+                  that dominated the comics industry.
+              </p>      
+            </div>
+        </div>
+        <div class="media p-3 mb-2">
+            <img src="img/authors/rdSharma.jpg" alt="RD Sharma" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://timesofindia.indiatimes.com/home/sunday-times/meet-the-big-b-of-maths/articleshow/59087852.cms" 
+                    target="_blank" class="link authorName">R.D. Sharma</a>:</h4>
+              <p class="authorAbout">R.D. Sharma is one of the best mathematics author and mathematician in 
+                  India at this very moment. He's head of Science and Humanities of BTE(Board of 
+                  Technical Education). He's serving as Vice Principal of Guru Nanak Dev Co-ed Polytechnic, 
+                  Rohini - 15, New Delhi..
+              </p>      
+            </div>
+        </div>
+        <div class="media p-3 mb-2">
+            <img src="img/authors/rkNarayan.jpg" alt="R.K. Narayan" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://en.wikipedia.org/wiki/R._K._Narayan" class="link authorName" target="_blank" >
+                    R.K. Narayan</a>:</h4>
+              <p class="authorAbout">Rasipuram Krishnaswami Iyer Narayanaswami (10 October 1906 – 13 May 2001),
+                   was an Indian writer known for his work set in the fictional South Indian town of Malgudi. 
+                   He was a leading author of early Indian literature in English along with Mulk Raj Anand 
+                   and Raja Rao.
+              </p>      
+            </div>
+        </div>
+        <div class="media p-3 mb-2">
+            <img src="img/authors/alanMoore.jpg" alt="Alan Moore" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://en.wikipedia.org/wiki/Alan_Moore" class="link authorName" target="_blank" >
+                    Alan Moore</a>:</h4>
+              <p class="authorAbout">Alan Moore is an English writer best known for his comic books and 
+                  considered to be the best graphic novelist of all time. He was born Alan Oswald Moore
+                   on November 18th, 1953 in Northampton, England, to Ernest Moore, a brewery employee, 
+                   and Sylvia Doreen, a printer.
+              </p>      
+            </div>
+        </div>
+        <div class="media p-3 mb-2">
+            <img src="img/authors/hcVerma.jpg" alt="HC Verma" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://hcverma.in/" class="link authorName" target="_blank" >
+                    H.C. Verma</a>:</h4>
+              <p class="authorAbout">Harish Chandra Verma (born 8 April 1952) is an Indian experimental 
+                  physicist and a professor emeritus of the Indian Institute of Technology Kanpur since 
+                  1994. His field of research is nuclear physics. He has authored graduate, undergraduate 
+                  and school textbooks.
+              </p>      
+            </div>
+        </div>
+        <div class="media p-3 mb-2">
+            <img src="img/authors/irodov.png" alt="Irodov" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://en.wikipedia.org/wiki/Igor_Irodov" class="link authorName" target="_blank" >
+                    I.E. Irodov</a>:</h4>
+              <p class="authorAbout">Irodov was born in Murom (16 November 1923 – 22 October 2002), Vladimir
+                   Oblast, Russia. When he was eight his family moved to Moscow, where he lived 
+                   until his death. During World War II he fought with various infantry units at 
+                   the 1st and 4th Ukrainian Fronts, also acting as a drafter and cartographer.
+              </p>      
+            </div>
+        </div>
+        <div class="media p-3 mb-2">
+            <img src="img/authors/rsAggarwal.jpg" alt="RS Aggarwal" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://www.rsaggarwal.com/" class="link authorName" target="_blank" >
+                    R.S. Aggarwal</a>:</h4>
+              <p class="authorAbout">R S Aggarwal. He was born on January 2, 1946 in a village of Delhi. 
+                  He graduated from Kirori Mal College, University of Delhi. ... In 1976, he was awarded 
+                  a fellowship for 3 years and joined the University of Delhi.
+              </p>      
+            </div>
+        </div>
+        <div class="media p-3 mb-2">
+            <img src="img/authors/chetanBhagat.jpg" alt="Chetan Bhagat" class="mr-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+              <h4><a href="https://en.wikipedia.org/wiki/Chetan_Bhagat" class="link authorName" target="_blank" >
+                    Chetan Bhagat</a>:</h4>
+              <p class="authorAbout">Chetan Bhagat was born on 22 April, 1974. He is an indian author of six 
+                  blockbuster books. These include five novels—Five Point Someone (2004), One Night @ the 
+                  Call Center (2005), The 3 Mistakes of My Life (2008), 2 States (2009), Revolution 2020 
+                  (2011)—and the non-fiction title What Young India Wants (2012).
+              </p>      
+            </div>
+        </div>
+    </div>
+    <!-- Authors End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="Container bg-dark text-white pb-2">
+          <div class="pt-5">
+              <h1 class="text-center">
+                  <a href="index.html" class="link text-white footerHeading">Be The Best</a>
+              </h1>
+              <hr class="w-25 mx-auto mt-0" id="thematicBreak" >
+              <br><br>    
+          </div>
+          <div class="social-links-warp">
+              <div class="container">
+                  <div class="social-links mx-auto text-center">
+                      <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="instagram socialMedia">
+                                  <img src="img/Icons/instagram.png" alt="Insta" class="footerIcons rounded-circle" />
+                                  <span class="socialLinks"> Instagram</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6  mt-3">
+                              <a href="" class="google-plus socialMedia">
+                                  <img src="img/Icons/google-plus.png" alt="G+" class="footerIcons" />
+                                  <span class="socialLinks"> G+plus</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="pinterest socialMedia">
+                                  <img src="img/Icons/pinterest.png" alt="Pinterest" class="footerIcons" />
+                                  <span class="socialLinks"> Pinterest</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="facebook socialMedia">
+                                  <img src="img/Icons/facebook.png" alt="fb" class="footerIcons" />
+                                  <span class="socialLinks"> Facebook</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="twitter socialMedia">
+                                  <img src="img/Icons/twitter.png" alt="Twitter" class="footerIcons" />
+                                  <span class="socialLinks"> Twitter</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="youtube socialMedia">
+                                  <img src="img/Icons/youtube.png" alt="youtube" class="footerIcons" />
+                                  <span class="socialLinks"> Youtube</span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+                  <p class="text-white text-center mt-5 pb-2 myRight">Copyright &copy;
+                      <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </div>
+          </div>  
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- ================ JavaScripts & JQuery ===================== -->
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+        crossorigin="anonymous">
+
+    <!-- Preloader Script Start -->
+    <script src="js/preloader.js"></script>
+    <!-- Preloader Script End -->        
+  </body>
+</html>

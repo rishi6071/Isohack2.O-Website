@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+.faqOpt{
+    color:black;
+    transition: 0.5s;
+  }
+  a.faqOpt:hover{
+    color:grey;
+  }
+
+  @media (max-width:768px) {
+
+    .aligning{
+      text-align:center;
+    }
+  }
+
+  @keyframes faqs {
+    from {
+      margin-left: 500px;
+      opacity: 0;
+    }
+    to {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+
+  #opacityEffect > div {
+    animation-name: faqs;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+

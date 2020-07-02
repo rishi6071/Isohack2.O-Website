@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FAQs | Be The Best</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Expected Questions and their Answers" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <!-- Title Bar Icon -->
+    <link rel="icon" type="image/ico" href="img/Logo/log.jpg" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom_css/indexStyle.css" />
+    <link rel="stylesheet" href="css/custom_css/preloader.css" />
+    <link rel="stylesheet" href="css/custom_css/navbar.css" />
+    <link rel="stylesheet" href="css/custom_css/footer.css" />
+    <link rel="stylesheet" href="css/custom_css/faq.css" />
+
+  </head>    
+  <body>
+    <!-- Page Preloader -->
+    <div class="loading"></div>
+
+    <!-- Navigation Bar Start -->
+    <header class="sticky-top">
+      <div>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+              <a class="navbar-brand text-success websiteName" href="index.html">
+                  <img src="img/Logo/log.jpg" alt="Logo" class="brand-logo"/>
+                  Be The Best </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto setNav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shop.html" data-toggle="tooltip" title="Diff. Kinds of Product">
+                        Shop</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="authors.html" data-toggle="tooltip" title="About Famous Authors">
+                          Authors</a>
+                  </li>
+                  <li class="nav-item dropdown active">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help
+                      </a>
+                      <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="contact.html" title="Contact Us">Contact Us</a>
+                        <a class="dropdown-item" href="about.html" title="Something About us">About Us</a>
+                        <a class="dropdown-item active" href="FAQs.html" title="Expected Q/A">FAQs</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Profile
+                          <!-- <img src="img/Icons/account.png" alt="Acc." height="25px" width="25px" /> -->
+                    </a>
+                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="myProfile.html"><i class='fas fa-user' style='font-size:20px'></i>
+                          Edit Profile</a>
+                      <a class="dropdown-item" href="cart.html">My Cart</a>                            
+                      <a class="dropdown-item" href="myOrders.html">My Orders</a>                            
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">LOG OUT</a>
+                    </div>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 setSearch">
+                  <input class="form-control mr-sm-2" type="search" title="Search Here" 
+                      placeholder="Author/Book Name" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+          </nav>
+      </div>
+    </header>
+    <!-- Navigation Bar End -->
+
+    <!-- FAQs Heading Start -->
+    <section>
+      <div class="container-fluid py-4 bgPageHeading">
+          <h6 class="text-dark ml-5"><a href="index.html" class="text-primary">Home</a> / FAQs </h6>
+          <small class="ml-5 pl-5">Can't find the answer you're looking for? We've shared some 
+            of the most frequently asked questions to help you out</small>
+      </div>
+    </section>
+    <!-- FAQs Heading End -->
+
+    <!-- FAQs Body Start -->
+    <section>
+      <div class="container my-5">
+        <div class="row">
+
+          <!-- FAQs Options -->
+          <div class="col-md-3 col-12 p-4 bgPageHeading rounded aligning">
+            <div class="pl-4">
+              <h6><a href="#" class="link font-weight-bold" style="color:grey;" onclick="pay()" id="payColor">PAYMENT</a></h6>
+            </div>
+            <div class="pl-4 pt-4">
+              <h6><a href="#" class="link font-weight-bold faqOpt" onclick="del()" id="delColor">DELIVERY</a></h6>
+            </div>
+            <div class="pl-4 pt-4">
+              <h6><a href="#" class="link font-weight-bold faqOpt" onclick="ord()" id="ordColor">ORDERS</a></h6>
+            </div>
+            <div class="pl-4 pt-4">
+              <h6><a href="#" class="link font-weight-bold faqOpt" onclick="ref()" id="refColor">REFUNDS</a></h6>
+            </div>
+            <div class="pl-4 pt-4">
+              <h6><a href="#" class="link font-weight-bold faqOpt" onclick="pdStk()" id="pdtColor">PRODUCT & STOCK</a></h6>
+            </div>
+            <div class="pl-4 pt-4">
+              <h6><a href="#" class="link font-weight-bold faqOpt" onclick="acc()" id="accColor">ACCOUNT</a></h6>
+            </div>
+          </div>
+
+          <!-- FAQs Questions -->
+          <div class="col-md-9 col-12" id="opacityEffect">
+
+            <!-- PAYMENT -->
+            <div class="px-3" id="payment">
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">What payment methods do you accept? 
+                  <span class="float-right"><a href="#q1" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q1">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Do you sell Gift Cards? 
+                  <span class="float-right"><a href="#q2" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q2">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">How do i purchase a Gift Card?
+                  <span class="float-right"><a href="#q3" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q3">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Why haven't i recieved my Gift Card?
+                  <span class="float-right"><a href="#q4" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q4">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I've lost my Gift Card, can i get a replacement?
+                  <span class="float-right"><a href="#q5" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q5">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <hr class="w-100">
+            </div>
+
+            <!-- DELIVERY -->
+            <div class="px-3" style="display:none;" id="delivery">
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I can't wait! How do i put it on?
+                  <span class="float-right"><a href="#q1" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q1">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">How long do Tattly Last? 
+                  <span class="float-right"><a href="#q2" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q2">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Ok, I love this tattoo but how do i get it off?
+                  <span class="float-right"><a href="#q3" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q3">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I love them but are they safe?
+                  <span class="float-right"><a href="#q4" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q4">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Where do all of these awesome designs come from?
+                  <span class="float-right"><a href="#q5" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q5">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <hr class="w-100">
+            </div>
+
+            <!-- ORDERS -->
+            <div class="px-3" style="display:none;" id="orders">
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Do you sell Gift Cards? 
+                  <span class="float-right"><a href="#q1" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q1">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Where do all of these awesome designs come from?
+                  <span class="float-right"><a href="#q2" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q2">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">How do i purchase a Gift Card?
+                  <span class="float-right"><a href="#q3" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q3">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Ok, I love this tattoo but how do i get it off?
+                  <span class="float-right"><a href="#q4" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q4">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I've lost my Gift Card, can i get a replacement?
+                  <span class="float-right"><a href="#q5" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q5">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <hr class="w-100">
+            </div>
+
+            <!-- REFUNDS -->
+            <div class="px-3" style="display:none;" id="refunds">
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Where do all of these awesome designs come from?
+                  <span class="float-right"><a href="#q1" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q1">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Ok, I love this tattoo but how do i get it off?
+                  <span class="float-right"><a href="#q2" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q2">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I love them but are they safe?
+                  <span class="float-right"><a href="#q3" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q3">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I've lost my Gift Card, can i get a replacement?
+                  <span class="float-right"><a href="#q4" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q4">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">How do i purchase a Gift Card?
+                  <span class="float-right"><a href="#q5" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q5">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <hr class="w-100">
+            </div>
+
+            <!-- PRODUCT & STOCK -->
+            <div class="px-3" style="display:none;" id="productAndStock">
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Do you sell Gift Cards? 
+                  <span class="float-right"><a href="#q1" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q1">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">What payment methods do you accept? 
+                  <span class="float-right"><a href="#q2" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q2">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Why haven't i recieved my Gift Card?
+                  <span class="float-right"><a href="#q3" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q3">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">How do i purchase a Gift Card?
+                  <span class="float-right"><a href="#q4" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q4">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I've lost my Gift Card, can i get a replacement?
+                  <span class="float-right"><a href="#q5" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q5">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <hr class="w-100">
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="px-3" style="display:none;" id="account">
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">How do i purchase a Gift Card?
+                  <span class="float-right"><a href="#q1" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q1">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Do you sell Gift Cards? 
+                  <span class="float-right"><a href="#q2" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q2">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">I've lost my Gift Card, can i get a replacement?
+                  <span class="float-right"><a href="#q3" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q3">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">Why haven't i recieved my Gift Card?
+                  <span class="float-right"><a href="#q4" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q4">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <div>
+                <hr class="w-100">
+                <small class="font-weight-bold">What payment methods do you accept? 
+                  <span class="float-right"><a href="#q5" data-toggle="collapse" role="button" 
+                    aria-expanded="false" aria-controls="Question1" class="faqOpt h5">+</a></span>
+                </small>
+                <div class="collapse" id="q5">
+                  <small class="pl-3 text-secondary">W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                    The reference contains examples for all properties, methods and events, and is continuously updated 
+                    according to the latest web standards. Web pages are not the only place where JavaScript is 
+                    used. Many desktop and server programs use JavaScript. Node.js is the best known. 
+                    Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+                  </small>
+                </div>
+              </div>
+              <hr class="w-100">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- FAQs Body End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="Container bg-dark text-white pb-2">
+          <div class="pt-5">
+              <h1 class="text-center">
+                  <a href="index.html" class="link text-white footerHeading">Be The Best</a>
+              </h1>
+              <hr class="w-25 mx-auto mt-0" id="thematicBreak" >
+              <br><br>    
+          </div>
+          <div class="social-links-warp">
+              <div class="container">
+                  <div class="social-links mx-auto text-center">
+                      <div class="row">
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="instagram socialMedia">
+                                  <img src="img/Icons/instagram.png" alt="Insta" class="footerIcons rounded-circle" />
+                                  <span class="socialLinks"> Instagram</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6  mt-3">
+                              <a href="" class="google-plus socialMedia">
+                                  <img src="img/Icons/google-plus.png" alt="G+" class="footerIcons" />
+                                  <span class="socialLinks"> G+plus</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="pinterest socialMedia">
+                                  <img src="img/Icons/pinterest.png" alt="Pinterest" class="footerIcons" />
+                                  <span class="socialLinks"> Pinterest</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="facebook socialMedia">
+                                  <img src="img/Icons/facebook.png" alt="fb" class="footerIcons" />
+                                  <span class="socialLinks"> Facebook</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="twitter socialMedia">
+                                  <img src="img/Icons/twitter.png" alt="Twitter" class="footerIcons" />
+                                  <span class="socialLinks"> Twitter</span>
+                              </a>
+                          </div>
+                          <div class="col-xl-2 col-lg-2 col-md-4 col-6 mt-3">
+                              <a href="" class="youtube socialMedia">
+                                  <img src="img/Icons/youtube.png" alt="youtube" class="footerIcons" />
+                                  <span class="socialLinks"> Youtube</span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+                  <p class="text-white text-center mt-5 pb-2 myRight">Copyright &copy;
+                      <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </div>
+          </div>  
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- ================ JavaScripts & JQuery ===================== -->
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+        crossorigin="anonymous">
+
+    <script src="js/myFaq.js"></script>     
+    
+    <!-- Preloader Script Start -->
+    <script src="js/preloader.js"></script>
+    <!-- Preloader Script End -->       
+  </body>
+</html>

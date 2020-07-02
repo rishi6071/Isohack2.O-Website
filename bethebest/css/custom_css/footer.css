@@ -1,0 +1,51 @@
+@charset 'utf-8';
+
+/* Used in Footer Section {index} */
+#thematicBreak{
+    border-color: var(--m-color-lightgrey);
+    border-style:dotted;
+}
+
+
+/* Social Links in Footer {{Start}} */
+a.footerHeading:hover{
+    color: var(--m-color-lightgrey);
+}
+
+.socialMedia{
+    font-size:0.9em;
+    color: var(--m-color-lightgrey);
+}
+
+span.socialLinks{
+    vertical-align: -2px;
+}
+span.socialLinks:hover{
+    text-shadow:0px 0px 1px var(--m-color-white);
+}
+
+a:hover{
+    text-decoration:none;
+    color: white;
+}
+
+.footerIcons, .contactInfo{
+    height:25px;
+    width:25px;
+}
+
+.myRight{
+    font-size:0.6em;
+}
+
+@media (max-width:768px)  {
+    .footerIcons{
+      font-size:20px;
+    }
+
+    .socialMedia{
+      font-size:0.8em;
+    }
+  }
+/* Social Links in Footer {{End}} */
+

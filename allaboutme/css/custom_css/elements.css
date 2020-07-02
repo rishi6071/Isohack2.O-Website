@@ -1,0 +1,274 @@
+@charset "utf-8";
+  
+:root {
+    --m-primary-color: #0275d8;
+    --m-success-color: #5cb85c;
+    --m-dark-color: #292b2c;
+    --m-info-color: #5bc0de;
+    --m-warning-color: #f0ad4e;
+    --m-secondary-color: #555555;
+    --m-danger-color: #f44336;
+    --m-white-color: white;
+}
+
+.btn {
+    transition: 1s;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.navbarBtn:hover {
+    -webkit-box-shadow: -1px 9px 40px rgba(0,0,0,0.4);  
+    -moz-box-shadow: -1px 9px 40px rgba(0,0,0,0.4);  
+    box-shadow:-1px 9px 40px rgba(0,0,0,0.4);
+}
+
+.txt-sample {
+    font-family: 'Constantia';
+}
+
+.txt-sample + p {
+    color:#006699;
+    line-height: 2;
+}
+
+.sampleBtn {    
+    padding: 12px 27px;
+    margin-right: 2px;
+    margin-top: 13px;
+}
+
+.disabled {
+    cursor:not-allowed;
+}
+
+/* Sample Buttons */
+.list1 .btn {
+    border-radius: 0;
+}
+.list3 .btn {
+    border-radius: 30px;
+}
+.list4 .btn {
+    border-radius: 50%;
+}
+.list5 .btn {
+    border-radius: 30px;
+    padding-right: 40px;
+}
+
+/* Bootstrap Buttons Customizing On basis of Colors */
+.primary {
+    background-color: var(--m-primary-color);
+    color: var(--m-white-color);
+}
+.primary:hover {
+    background-color: var(--m-white-color);
+    color: var(--m-primary-color);
+    border-color: var(--m-primary-color);
+}
+
+.success {
+    background-color: var(--m-success-color);
+    color: var(--m-white-color);
+}
+.success:hover {
+    background-color: var(--m-white-color);
+    color: var(--m-success-color);
+    border-color: var(--m-success-color);
+}
+
+.dark {
+    background-color: var(--m-dark-color);
+    color: var(--m-white-color);
+}
+.dark:hover {
+    background-color: var(--m-white-color);
+    color: var(--m-dark-color);
+    border-color: var(--m-dark-color);
+}
+
+.info {
+    background-color: var(--m-info-color);
+    color: var(--m-white-color);
+}
+.info:hover {
+    background-color: var(--m-white-color);
+    color: var(--m-info-color);
+    border-color: var(--m-info-color);
+}
+
+.warning {
+    background-color: var(--m-warning-color);
+    color: var(--m-white-color);
+}
+.warning:hover {
+    background-color: var(--m-white-color);
+    color: var(--m-warning-color);
+    border-color: var(--m-warning-color);
+}
+
+.danger {
+    background-color: var(--m-danger-color);
+    color: var(--m-white-color);
+}
+.danger:hover {
+    background-color: var(--m-white-color);
+    color: var(--m-danger-color);
+    border-color: var(--m-danger-color);
+}
+
+.secondary {
+    background-color: var(--m-secondary-color);
+    color: var(--m-white-color);
+}
+.secondary:hover {
+    background-color: var(--m-white-color);
+    color: var(--m-secondary-color);
+    border-color: var(--m-secondary-color);
+}
+
+.btn-outline-warning:hover {
+    color: white;
+}
+
+/******* Size Sample Buttons *******/
+
+.sizeBtn {
+    margin-top: 13px;
+    margin-right: 10px;
+}
+
+.btn-xl {
+    padding: 18px 38px;
+}
+.btn-lg {
+    padding: 12px 35px;
+}
+
+/********** Alignment **********/
+.clearfix {
+    clear:both;
+    overflow:auto;
+    border: 1px solid rgba(128,128,128,0.06);
+}
+
+.align-para {
+    color: var(--m-secondary-color);
+    line-height: 1.7;
+}
+
+/********** Blockquote **********/
+.blockquote {
+    background-color: #FEF8FF;
+    padding: 15px 30px;
+    border: 0;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: purple;
+}
+
+.blockquote-text {
+    line-height: 1.4;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman';
+}
+
+/********** TABLE **********/
+.table {
+    background-color: rgba(243,229,245,0.3);
+    border: none;
+}
+
+.table-head th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: slateblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/************ Image Gallery ************/
+img.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border: none;
+}
+.modal-body {
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-body button {
+    color: black;
+}
+
+.modalImg {
+    width: 100%; 
+    height: 350px;
+    object-fit: cover;
+}
+
+@media (max-height:576px) {
+    .modalImg {
+        height: 180px;
+    }
+}
+
+/************ List ************/
+ul.sample-list li:before {
+    content: '>';
+    font-weight: bold;
+    color: purple;
+}
+
+ol#orderList li {
+    color: #bf94e4;
+}
+
+/************ Form Element ************/
+.inputElement .form-control {
+    border: 0;
+    border-radius: 0px;
+    padding: 15px 30px;
+    font-size: smaller;
+    background-color: rgba(237, 231, 246,0.3);
+}
+
+.form-control::placeholder {
+    font-family: constantia;
+    letter-spacing: 0.6px;
+}
+
+select.form-control {
+    font-family: Constantia;
+    letter-spacing: 0.6px;
+    color: grey;
+}
+
+/************ Swtiches ************/
+ol#label-list li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+ul#switch-list li {
+    margin-bottom: 17px;
+}
+
+@media screen and (max-width:292px) {
+    ol#label-list li {
+        font-size: 1rem;
+    }
+    ul#switch-list li {
+        margin-bottom: 41px;
+    }
+}
+
+.custom-control {
+    margin-bottom: 17px;
+}

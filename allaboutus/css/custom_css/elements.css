@@ -61,77 +61,113 @@
 
 /* Bootstrap Buttons Customizing On basis of Colors */
 .primary {
+    background-color: #0275d8;
     background-color: var(--m-primary-color);
+    color: white;
     color: var(--m-white-color);
 }
 .primary:hover {
+    background-color: white;
     background-color: var(--m-white-color);
+    color: #0275d8;
     color: var(--m-primary-color);
+    border-color: #0275d8;
     border-color: var(--m-primary-color);
 }
 
 .success {
+    background-color: #5cb85c;
     background-color: var(--m-success-color);
+    color: white;
     color: var(--m-white-color);
 }
 .success:hover {
+    background-color: white;
     background-color: var(--m-white-color);
+    color: #5cb85c;
     color: var(--m-success-color);
+    border-color: #5cb85c;
     border-color: var(--m-success-color);
 }
 
 .dark {
+    background-color: #292b2c;
     background-color: var(--m-dark-color);
+    color: white;
     color: var(--m-white-color);
 }
 .dark:hover {
+    background-color: white;
     background-color: var(--m-white-color);
+    color: #292b2c;
     color: var(--m-dark-color);
+    border-color: #292b2c;
     border-color: var(--m-dark-color);
 }
 
 .info {
+    background-color: #5bc0de;
     background-color: var(--m-info-color);
+    color: white;
     color: var(--m-white-color);
 }
 .info:hover {
+    background-color: white;
     background-color: var(--m-white-color);
+    color: #5bc0de;
     color: var(--m-info-color);
+    border-color: #5bc0de;
     border-color: var(--m-info-color);
 }
 
 .warning {
+    background-color: #f0ad4e;
     background-color: var(--m-warning-color);
+    color: white;
     color: var(--m-white-color);
 }
 .warning:hover {
+    background-color: white;
     background-color: var(--m-white-color);
+    color: #f0ad4e;
     color: var(--m-warning-color);
+    border-color: #f0ad4e;
     border-color: var(--m-warning-color);
 }
 
 .danger {
+    background-color: #f44336;
     background-color: var(--m-danger-color);
+    color: white;
     color: var(--m-white-color);
 }
 .danger:hover {
+    background-color: white;
     background-color: var(--m-white-color);
+    color: #f44336;
     color: var(--m-danger-color);
+    border-color: #f44336;
     border-color: var(--m-danger-color);
 }
 
 .secondary {
+    background-color: #555555;
     background-color: var(--m-secondary-color);
+    color: white;
     color: var(--m-white-color);
 }
 .secondary:hover {
+    background-color: white;
     background-color: var(--m-white-color);
+    color: #555555;
     color: var(--m-secondary-color);
+    border-color: #555555;
     border-color: var(--m-secondary-color);
 }
 
 .btn-outline-warning:hover {
     color: white;
+    color: var(--m-white-color);
 }
 
 /********* || SIZE SAMPLE BUTTONS *********/

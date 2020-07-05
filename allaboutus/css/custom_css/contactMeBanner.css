@@ -22,6 +22,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     float:right;
+    background-color: #eb5252;
     background-color: var(--m-reddish-color);
     color: white;
 }

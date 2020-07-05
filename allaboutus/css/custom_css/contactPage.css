@@ -8,6 +8,7 @@
 }
 
 ::placeholder {
+    color: rgba(128,128,128,0.2);
     color: var(--m-greyish-color);
     letter-spacing: 0.8px;
 }
@@ -20,12 +21,14 @@
 
 form#contact-form input, #txt {
     border:1px solid var(--m-greyish-color);
+    border-color: rgba(128,128,128,0.2);
     font-size: small;
     border-radius: 0;
     padding: 15px 20px;
 }
 
 .sendBtn {
+    color: #eb5252;
     color: var(--m-reddish-color);
     letter-spacing: 2px;
     font-weight: lighter;
@@ -38,6 +41,7 @@ form#contact-form input, #txt {
 
 .sendBtn:hover {
     color: white;
+    background-color: #eb5252;
     background-color: var(--m-reddish-color);
 }
 
@@ -48,6 +52,7 @@ form#contact-form input, #txt {
 .myDetails {
     font-weight: bold;
     font-family: "Constantia";
+    color: #34495E;
     color: var(--m-darkGreyish-color);
     font-size: 1.1rem;
     letter-spacing: 0.8px;

@@ -13,12 +13,14 @@
 }
 
 a.footer-mail {
+    color: white;
     color: var(--m-white-color);
     font-size: 2.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a.footer-mail:hover {
+    color: white;
     color: var(--m-white-color);
     text-decoration: none;
 }
@@ -63,6 +65,7 @@ a.footer-mail:hover {
 }
 
 a.firm-name {
+    color: #eb5252;
     color: var(--m-reddish-color);
 }
 

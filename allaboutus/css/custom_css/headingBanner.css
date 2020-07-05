@@ -4,13 +4,13 @@
     --m-reddish-color: #eb5252;
     --m-darkGreyish-color: #34495E;
     --m-white-color: white;
-    --m-TimesNewRoman-font: "Times New Roman";
 }
 
 /************ || HEADING BANNER ************/
 
 div#banner-position {
     position: relative;
+    -ms-background: linear-gradient(to left, #bdbdbd, #e0e0e0);
 }
 
 div#banner-position img {
@@ -25,13 +25,14 @@ div#aboutData {
 }
 
 .pageHeading {
-    font-family: var(--m-TimesNewRoman-font);
+    font-family: "Times New Roman";
     font-size: 3.5rem;
     font-weight: bold;
 }
 
 a.heading-link {
     font-size: 1.1rem;
+    color: #eb5252;
     color: var(--m-reddish-color);
 }   
 a.heading-link:hover {
@@ -40,6 +41,7 @@ a.heading-link:hover {
 }
 
 .slash {
+    color: #eb5252;
     color: var(--m-reddish-color);
     font-size: 1.5rem;
 }

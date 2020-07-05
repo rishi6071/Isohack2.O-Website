@@ -30,9 +30,11 @@
 }
 
 .submitBtn {
+    background-color: #eb5252;
     background-color: var(--m-reddish-color);
     padding-top: 20px;
     padding-bottom: 20px;
+    color: white;
     color: var(--m-white-color);
     font-size: smaller;
     letter-spacing: 1.5px;

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/************* || GENERAL STYLES *************/
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +13,7 @@ html {
 
 body {
     overflow-x: hidden;
+    -ms-overflow-style: none;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -21,9 +23,6 @@ body {
     } 
 */
 /* Hide scrollbar for IE and Edge */
-body {
-    -ms-overflow-style: none;
-}
 
 :root {
     --m-reddish-color: #eb5252;
@@ -56,7 +55,7 @@ header {
     box-shadow:-1px 9px 20px rgba(0,0,0,0.2);
 }
 
-/********************* HERO BANNER *********************/
+/************ || HERO BANNER ************/
 div#banner {
     position: relative;
     border: 1px solid lightblue;
@@ -110,7 +109,7 @@ p.aboutMe {
     color: white;
 }
 
-/*********** Hero Banner Animation ***********/
+/************ || HERO BANNER ANIMATION ************/
 @keyframes heroBannerButtons {
     0% {
         opacity: 0;
@@ -185,7 +184,7 @@ div#textAnima {
 }
 
 
-/******************* QUERY & DISCUSSION PART *******************/
+/************ || QUERY & DISCUSSION PART ************/
 .text-data {
     font-family: var(--m-TimesNewRoman-font);
     font-weight: 400;
@@ -220,7 +219,7 @@ a.mailId:hover {
     color: var(--m-reddish-color);
 }
 
-/******************* SERVICES *******************/
+/************ || SERVICES ************/
 .services-heading {
     font-family: var(--m-TimesNewRoman-font);
     font-weight: bold;
@@ -261,7 +260,7 @@ div.hover-card:hover {
     background-color: var(--m-reddish-color);
 }
 
-/******************* PORTFOLIO PAGE *******************/
+/************ || PORTFOLIO PAGE ************/
 .service-nav {
     margin-top: 40px;
     float: right;
@@ -293,7 +292,7 @@ div.hover-card:hover {
 }
 
 
-/******************* PORTFOLIO DETAILS  *******************/
+/************ || PORTFOLIO DETAILS  ************/
 div.portfolio-img {
     margin-top: 16vh;
 }
@@ -311,7 +310,7 @@ div.portfolio-details-text p {
 }
 
 
-/******************* +VE FEEDBACK  *******************/
+/************ || +VE FEEDBACK  ************/
 div#positive-feedback {
     margin-top: 120px;
 }

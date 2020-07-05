@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/********** || ELEMENTS PAGE **********/
   
 :root {
     --m-primary-color: #0275d8;
@@ -42,7 +44,7 @@
     cursor:not-allowed;
 }
 
-/* Sample Buttons */
+/********** || SAMPLE BUTTONS **********/
 .list1 .btn {
     border-radius: 0;
 }
@@ -132,7 +134,7 @@
     color: white;
 }
 
-/******* Size Sample Buttons *******/
+/********* || SIZE SAMPLE BUTTONS *********/
 
 .sizeBtn {
     margin-top: 13px;
@@ -146,7 +148,7 @@
     padding: 12px 35px;
 }
 
-/********** Alignment **********/
+/********* || ALIGNMENT *********/
 .clearfix {
     clear:both;
     overflow:auto;
@@ -158,7 +160,7 @@
     line-height: 1.7;
 }
 
-/********** Blockquote **********/
+/********** || BLOCKQUOTE **********/
 .blockquote {
     background-color: #FEF8FF;
     padding: 15px 30px;
@@ -174,7 +176,7 @@
     font-family: 'Times New Roman';
 }
 
-/********** TABLE **********/
+/************ || TABLE ************/
 .table {
     background-color: rgba(243,229,245,0.3);
     border: none;
@@ -190,7 +192,7 @@
 }
 
 
-/************ Image Gallery ************/
+/************ || IMAGE GALLERY ************/
 img.gallery-img {
     width: 100%;
     height: 200px;
@@ -219,7 +221,7 @@ img.gallery-img {
     }
 }
 
-/************ List ************/
+/************ || LIST ************/
 ul.sample-list li:before {
     content: '>';
     font-weight: bold;
@@ -230,7 +232,7 @@ ol#orderList li {
     color: #bf94e4;
 }
 
-/************ Form Element ************/
+/************ || FORM ELEMENT ************/
 .inputElement .form-control {
     border: 0;
     border-radius: 0px;
@@ -250,7 +252,7 @@ select.form-control {
     color: grey;
 }
 
-/************ Swtiches ************/
+/************ || SWITCHES ************/
 ol#label-list li {
     font-size: 1.1rem;
     margin-bottom: 15px;

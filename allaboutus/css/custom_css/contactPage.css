@@ -1,10 +1,15 @@
 @charset "utf-8";
 
-/************************ Contact Form in Contact Page ************************/
+/************************ CONTACT FORM IN CONTACT PAGE ************************/
 :root {
     --m-reddish-color: #eb5252;
     --m-greyish-color: rgba(128,128,128,0.2);
     --m-darkGreyish-color: #34495E;
+}
+
+::placeholder {
+    color: var(--m-greyish-color);
+    letter-spacing: 0.8px;
 }
 
 .map-height {
@@ -18,11 +23,6 @@ form#contact-form input, #txt {
     font-size: small;
     border-radius: 0;
     padding: 15px 20px;
-}
-
-::placeholder {
-    color: var(--m-greyish-color);
-    letter-spacing: 0.8px;
 }
 
 .sendBtn {

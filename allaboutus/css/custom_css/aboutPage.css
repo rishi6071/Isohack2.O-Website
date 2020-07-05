@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-.mySlogan {
+  /******** || ABOUT PAGE ********/
+
+  .mySlogan {
     font-weight: bold;
     font-family: Constantia;
     font-size: 3rem;

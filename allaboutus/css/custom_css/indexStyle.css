@@ -33,7 +33,7 @@ body {
 
 ::selection {
     background-color:rgba(0,0,0,0.6);
-    color: var(--m-white-color);
+    color: var(--m-white-color, white);
 }
 
 .message-input::placeholder {
@@ -69,17 +69,17 @@ div#bannerData {
 }
 
 #bannerHeading {
-    color: var(--m-reddish-color);
+    color: var(--m-reddish-color, #eb5252);
     font-size: 1.3vw;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .heroName {
-    font-family: var(--m-TimesNewRoman-font);
+    font-family: var(--m-TimesNewRoman-font, "Times New Roman");
     margin-top: 20px;
     font-size: 5vw;
-    color: var(--m-darkGreyish-color);
+    color: var(--m-darkGreyish-color, #34495E);
 }
 
 p.aboutMe {
@@ -89,7 +89,7 @@ p.aboutMe {
 
 .bannerBtn {
     color: white;
-    background-color:var(--m-reddish-color);
+    background-color:var(--m-reddish-color, #eb5252);
     transition: 0.5s;
 }
 
@@ -99,13 +99,13 @@ p.aboutMe {
 }
 
 .outlineBtn {
-    color: var(--m-darkGreyish-color);
-    border: 1px solid var(--m-reddish-color);
+    color: var(--m-darkGreyish-color, #34495E);
+    border: 1px solid var(--m-reddish-color, #eb5252);
     transition: 0.5s;
 }
 
 .outlineBtn:hover {
-    background-color: var(--m-reddish-color);
+    background-color: var(--m-reddish-color, #eb5252);
     color: white;
 }
 
@@ -186,12 +186,12 @@ div#textAnima {
 
 /************ || QUERY & DISCUSSION PART ************/
 .text-data {
-    font-family: var(--m-TimesNewRoman-font);
+    font-family: var(--m-TimesNewRoman-font, "Times New Roman");
     font-weight: 400;
 }
 
 .text-data + div {
-    color: var(--m-darkGreyish-color);
+    color: var(--m-darkGreyish-color, #34495E);
     margin-top: 35px;
     padding-right: 10%;
 }
@@ -216,14 +216,14 @@ a.mailId {
 }
 
 a.mailId:hover {
-    color: var(--m-reddish-color);
+    color: var(--m-reddish-color, #eb5252);
 }
 
 /************ || SERVICES ************/
 .services-heading {
-    font-family: var(--m-TimesNewRoman-font);
+    font-family: var(--m-TimesNewRoman-font, "Times New Roman");
     font-weight: bold;
-    color: var(--m-darkGreyish-color);
+    color: var(--m-darkGreyish-color, #34495E);
     margin-left: 5%;
 }
 
@@ -238,7 +238,7 @@ img.serviceImg {
 }
 
 a.service-opt {
-    color: var(--m-darkGreyish-color);
+    color: var(--m-darkGreyish-color, #34495E);
     text-decoration: none;
     font-family: "Constantia";
     font-size: 1.3rem;
@@ -248,7 +248,7 @@ a.service-opt {
 }
 
 a.service-opt:hover {
-    color: var(--m-white-color);
+    color: var(--m-white-color, white);
 }
 
 div.hover-card {
@@ -257,7 +257,7 @@ div.hover-card {
 }
 div.hover-card:hover {
     color: rgba(255,255,255,0.8);
-    background-color: var(--m-reddish-color);
+    background-color: var(--m-reddish-color, #eb5252);
 }
 
 /************ || PORTFOLIO PAGE ************/
@@ -324,8 +324,8 @@ div#positive-feedback {
     }
 }
 .username {
-    color: var(--m-reddish-color);
-    font-family: var(--m-TimesNewRoman-font);
+    color: var(--m-reddish-color, #eb5252);
+    font-family: var(--m-TimesNewRoman-font, "Times New Roman");
     font-size: 20px;
 }
 
@@ -335,7 +335,7 @@ div#positive-feedback {
 }
 
 .feedback {
-    color: var(--m-darkGreyish-color);
+    color: var(--m-darkGreyish-color, #34495E);
     margin-top: 25px;
 }
 

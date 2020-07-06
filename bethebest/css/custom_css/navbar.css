@@ -1,6 +1,5 @@
 @charset 'utf-8';
 
-
 /* When you will hover on the website Name then (in all Nav Section) */
 .brand-logo {
     width: 60px;
@@ -20,7 +19,7 @@
 }
 
 /* Navbar Dropdown Hoverable Effect */
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
     display: block;
 }  
 .dropdown>.dropdown-toggle:active {

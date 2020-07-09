@@ -17,3 +17,34 @@ label {
     line-height: 0;
     color: var(--m-color-lightgrey);
 }
+
+
+/* --------- || THANKU PAGE --------- */
+.back-to-shop {
+    font-size: 14px !important;
+    font-variant: small-caps;
+}
+
+
+/* --------- || AUTHORS PAGE --------- */
+#famous-authors .media {
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    border-radius: 5px;
+}
+
+#famous-authors .media-heading {
+    text-decoration: none;
+    color: #6C757D;
+}
+#famous-authors .media-heading:hover {
+    color: black;
+}
+
+#famous-authors p {
+    font-size: 0.95em;
+}
+
+#famous-authors img {
+    width: 75px;
+    border-radius: 50%;
+}

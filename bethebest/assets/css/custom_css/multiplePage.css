@@ -39,3 +39,13 @@ label {
     width: 75px;
     border-radius: 50%;
 }
+
+
+/* ------------------- || REGISTER PAGE ------------------- */
+a.account-exist, a.terms-conditions, a.hoverLink {
+    text-decoration: none;
+}
+
+a.account-exist:hover, a.hoverLink:hover {
+    color: rebeccapurple;
+}

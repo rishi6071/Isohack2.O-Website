@@ -84,9 +84,8 @@ a.productTitle:hover{
 
 
 /* || Join Us Modal */
-.hoverLink:hover{
-    color:purple;
-}
+
+/* IN MULTIPLE PAGE css file */
 .modal-title + button:focus {
     border: none;
     outline: none;

@@ -42,11 +42,7 @@
             return false;
         }
         else    {
-            pswd.style.display = "none";
+            confirmPswdError.style.display = "none";
             confirmPswd.style.borderColor = "lightgrey";
         }
     }
-
-
-
-

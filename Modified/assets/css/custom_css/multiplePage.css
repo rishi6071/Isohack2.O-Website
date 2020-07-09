@@ -1,9 +1,7 @@
 @charset "utf-8";
 
-/* --------- || EDIT PROFILE PAGE --------- */
-#account-profile {
-    background-color: rgba(128, 128, 128, 0.1);
-}
+/* ------------------- || EDIT PROFILE PAGE ------------------- */
+#account-profile { background-color: rgba(128, 128, 128, 0.1); }
 
 label {
     font-size: 0.9em;
@@ -12,21 +10,14 @@ label {
 }
 
 
-/* --------- || ABOUT US PAGE --------- */
-.myTeam{
-    line-height: 0;
-    color: var(--m-color-lightgrey);
-}
-
-
-/* --------- || THANKU PAGE --------- */
+/* ------------------- || THANKU PAGE ------------------- */
 .back-to-shop {
     font-size: 14px !important;
     font-variant: small-caps;
 }
 
 
-/* --------- || AUTHORS PAGE --------- */
+/* ------------------- || AUTHORS PAGE ------------------- */
 #famous-authors .media {
     border: 1px solid rgba(128, 128, 128, 0.15);
     border-radius: 5px;

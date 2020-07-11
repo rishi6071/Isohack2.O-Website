@@ -1,5 +1,6 @@
 /* REGISTER FORM VALIDATION */
     
+
     // Validating Contact Number
     function checkContact() {    
         let contactField = document.getElementById('contactNum');
@@ -46,3 +47,15 @@
             confirmPswd.style.borderColor = "lightgrey";
         }
     }
+
+
+
+    // const submit = document.querySelector('#registerForm');
+    // submit.addEventListener('submit', checkPassword);
+    // submit.addEventListener('submit', checkContact);
+
+    // const contact = document.querySelector('#contactNum');
+    // contact.addEventListener('change', checkContact);
+
+    // const confirmPswd = document.querySelector('#confirmPswd');
+    // confirmPswd.addEventListener('change', checkPassword);

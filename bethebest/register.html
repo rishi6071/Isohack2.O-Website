@@ -110,7 +110,8 @@
             </div>
 
             <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
-                <form action="#" method="POST" id="registerForm">
+                <form action="#" method="POST" id="registerForm" 
+                  onsubmit="event.preventDefault(); return checkContact(); return checkPassword()">
                     <div class="form-group">
                       <label for="userName" class="form-label">UserName:</label>
                       <input type="text" class="form-control" name="userName" value="" id="userName" required />
@@ -123,8 +124,8 @@
 
                     <div class="form-group">
                       <label for="contactNum" class="form-label">Contact No.</label>
-                      <input type="number" class="form-control" name="contactNum" id="contactNum" value=""
-                        pattern="[6-9]{1}-[0-9]{9}" onchange="return checkContact()" required />
+                      <input type="tel" class="form-control" name="contactNum" id="contactNum" value=""
+                        pattern="[0-9]{10}" onchange="return checkContact()" required />
                       <small id="contact-error-field" class="mt-2 text-danger"></small>
                     </div>
 
@@ -140,12 +141,11 @@
                         onchange="return checkPassword()" minlength="8" maxlength="12" required />
                       <small id="pswd-error-field" class="mt-2 text-danger"></small>
                     </div>
+                  
 
-                    <div class="form-check">
-                      <label class="form-check-label" for="remember">
-                        <input class="form-check-input" type="checkbox" name="remember" value="" id="remember" checked>
-                          Remember Me
-                      </label>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="rememberRegister" name="rememberRegister">
+                      <label class="custom-control-label" for="rememberRegister">Remember Me</label>
                     </div>
 
                     <div class="form-group">
@@ -155,8 +155,7 @@
                     </div>
 
                     <div class="form-group">
-                      <input type="submit" value="Join Us" class="btn btn-success mr-3 px-4" 
-                        onclick="return checkContact(); return checkPassword()"  />
+                      <input type="submit" id="submit" value="Join Us" class="btn btn-success mr-3 px-4" />
                       <input type="reset" value="Reset" class="btn btn-info px-4" />
                     </div>
 

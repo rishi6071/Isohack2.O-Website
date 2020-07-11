@@ -49,3 +49,13 @@ a.account-exist, a.terms-conditions, a.hoverLink {
 a.account-exist:hover, a.hoverLink:hover {
     color: rebeccapurple;
 }
+
+input[type="checkbox"]:hover {
+    cursor: pointer !important;
+} 
+
+
+/* ------------------- || CHECKOUT PAGE ------------------- */
+a.pay {
+    text-decoration: none;
+}

@@ -5,9 +5,10 @@
     transform: scale(1.03);
 }
 
-@media (max-width:765px)   {
-    .manage{
-        margin:auto;
+@media (max-width:768px)   {
+    .manage img{
+        display: block;
+        margin: 0 auto;
     }
     .manageText{
         margin-top:20px;

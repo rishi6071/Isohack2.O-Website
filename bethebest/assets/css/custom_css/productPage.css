@@ -12,6 +12,10 @@
     }
     .manageText{
         margin-top:20px;
+        text-align: center !important;
+    }
+
+    .author-name {
         text-align: center;
     }
 }

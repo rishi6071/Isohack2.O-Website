@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- title tag -->
-    <title>Product | Be The Best</title>
+    <title>My Orders | Be The Best</title>
     <!-- title bar icon -->
     <link rel="icon" type="image/ico" href="./assets/img/logo/logo.jpg" />
 
@@ -63,7 +63,7 @@
                   <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./shop.html">Shop</a>
+                  <a class="nav-link" href="./shop.html">Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./authors.html">Authors</a>
@@ -78,7 +78,7 @@
                       <a class="dropdown-item" href="./faqs.html">FAQs</a>
                     </div>
                   </li>
-                <li class="nav-item dropdown mr-2">
+                <li class="nav-item dropdown mr-2 active">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Profile
                   </a>
@@ -87,7 +87,7 @@
                       <i class="fa fa-user" aria-hidden="true" style="font-size: 23px;"></i> Edit Profile
                     </a>
                     <a class="dropdown-item" href="./cart.html">My Cart</a>
-                    <a class="dropdown-item" href="./myorders.html">My Orders</a>
+                    <a class="dropdown-item active" href="./myorders.html">My Orders</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">LOG OUT</a>
                   </div>
@@ -107,204 +107,65 @@
     <section>
         <nav class="breadcrumb py-4 pl-4">
             <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="./shop.html">Shop</a></li>
-            <li class="breadcrumb-item">Product</li>
+            <li class="breadcrumb-item">My Orders</li>
         </nav>
     </section>
     <!-- || PAGE BREADCRUMB End -->
 
 
-    <!-- || Product Details Start -->
+    <!-- Cart Table Start -->
     <section>
-        <div class="container my-5">
-            <div class="row">
-                <!-- Product Image -->
-                <div class="col-md-4 col-12">
-                    <div class="inner manage">
-                        <img src="./assets/img/product/hcPart1.jpg" alt="Product Image" class="rounded img-thumbnail" 
-                            height="300px" width="320px" />
-                    </div>
-                </div>
-
-                <div class="col-md-8 col-12 container">
-                    <h3 class="manageText">Concept of Physics</h3>
-                    <h6 class="author-name">Author : <a href="https://hcverma.in/" target="_blank" class="link author">HC Verma</a></h6>
-                    <div class="text-secondary ">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type
-                             specimen book. It has survived not only five centuries, but also the leap into 
-                             electronic typesetting, remaining essentially unchanged.
-                        </p>
-                        <p>Ex numquam veritatis debitis minima quo error quam eos dolorum quidem perferendis.
-                            Quos repellat dignissimos minus, eveniet nam voluptatibus molestias omnis reiciendis
-                            perspiciatis illum hic magni iste, velit aperiam quis.
-                        </p>
-                    </div>
-                    <h4 style="color:mediumpurple">Rs. 800.00</h4>
-
-                    <!-- Product QUantity -->
-                    <div style="width:120px; margin-top:20px;">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-danger btn-number myQtyBt rounded-left" 
-                                        data-type="minus" data-field="">
-                                    <span class="glyphicon glyphicon-minus h5">-</span>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="form-control input-number text-center pdtQty"
-                                 value="1" min="2" max="50">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-success btn-number myQtyBt rounded-right" 
-                                        data-type="plus" data-field="">
-                                    <span class="glyphicon glyphicon-plus h5">+</span>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="form-group mt-5">
-                        <a href="../cart.html" class="btn p-2 btn-secondary manageCartBt">
-                            <small class="myButton">ADD TO CART</small>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="container mt-5 mb-3 table-responsive">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th class="p-4">Image</th>
+                        <th class="p-4">Product</th>
+                        <th class="p-4">Price</th>
+                        <th class="p-4">Qty</th>
+                        <th class="p-4">Order Date</th>
+                        <th class="p-4">Arriving Date</th>
+                        <th class="p-4">Status</th>
+                        <th class="py-4 px-2">Cancel Order</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="./assets/img/product/hcPart1.jpg"  height="150px" alt="Product" /></td>
+                        <td class="align-middle">Concept of Physics (Part-1)<br/>HC Verma</td>
+                        <td class="align-middle">Rs.800</td>
+                        <td class="align-middle">1</td>
+                        <td class="align-middle">Apr 20,<br>2020</td>
+                        <td class="align-middle">Apr 26,<br>2020</td>
+                        <td class="align-middle"><span class="text-info">Shipped</span></td>
+                        <td class="align-middle"><button class="btn btn-secondary">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/img/product/hcPart2.jpg"  height="150px" alt="Product" /></td>
+                        <td class="align-middle">Concept of Physics (Part-2)<br/>HC Verma</td>
+                        <td class="align-middle">Rs.700</td>
+                        <td class="align-middle">1</td>
+                        <td class="align-middle">Apr 10,<br>2020</td>
+                        <td class="align-middle">Apr 16,<br>2020</td>
+                        <td class="align-middle"><span class="text-info">Delivered</span></td>
+                        <td class="align-middle"><button class="btn btn-secondary">x</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
-    <!-- || Product Details End -->
+    <!-- Cart Table End -->
 
-
-    <!-- || Product Slider Start -->
+    <!-- Cart and Shopping Buttons Start -->
     <section>
-        <div class="container text-center mt-5">
-            <h2 class="text-dark">Relative Products</h2>
-            <hr class="w-25 mx-auto mt-0" />
-        </div>
-        <div class="container owl-carousel owl-theme py-4 wrapper">
-            <div class="item">
-                <div class="card cardShadow">
-                    <div class="inner">
-                        <img src="./assets/img/product/rdClass9.jpg" alt="Not Found" class="card-img-top productImg" />
-                    </div>
-                    <div class="card-body py-3">
-                      <h5 class="card-title my-0"><a href="products/hcJee.html" class="link productTitle">Product</a></h5>
-                      <p class="card-text text-secondary">
-                          <small>Namashkaar..... Hello My Friends I am rishi soni from ATC.</small>
-                      </p>
-                      <a href="#" class="btn btn-secondary px-sm-3 px-2 product-btn">View Product
-                        <i class="material-icons">chevron_right</i>
-                      </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="item">
-              <div class="card cardShadow">
-                  <div class="inner">
-                      <img src="./assets/img/product/rdClass10.jpg" alt="Not Found" class="card-img-top productImg" />
-                  </div>
-                  <div class="card-body py-3">
-                    <h5 class="card-title my-0"><a href="products/hcJee.html" class="link productTitle">Product</a></h5>
-                    <p class="card-text text-secondary">
-                        <small>Namashkaar..... Hello My Friends I am rishi soni from ATC.</small>
-                    </p>
-                    <a href="#" class="btn btn-secondary px-sm-3 px-2 product-btn">View Product
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                  </div>
-              </div>
-            </div>
-  
-            <div class="item">
-              <div class="card cardShadow">
-                  <div class="inner">
-                      <img src="./assets/img/product/rdClass11.jpg" alt="Not Found" class="card-img-top productImg" />
-                  </div>
-                  <div class="card-body py-3">
-                    <h5 class="card-title my-0"><a href="products/hcJee.html" class="link productTitle">Product</a></h5>
-                    <p class="card-text text-secondary">
-                        <small>Namashkaar..... Hello My Friends I am rishi soni from ATC.</small>
-                    </p>
-                    <a href="#" class="btn btn-secondary px-sm-3 px-2 product-btn">View Product
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                  </div>
-              </div>
-            </div>
-  
-            <div class="item">
-              <div class="card cardShadow">
-                  <div class="inner">
-                      <img src="./assets/img/product/rdClass12Vol1.jpg" alt="Not Found" class="card-img-top productImg" />
-                  </div>
-                  <div class="card-body py-3">
-                    <h5 class="card-title my-0"><a href="products/hcJee.html" class="link productTitle">Product</a></h5>
-                    <p class="card-text text-secondary">
-                        <small>Namashkaar..... Hello My Friends I am rishi soni from ATC.</small>
-                    </p>
-                    <a href="#" class="btn btn-secondary px-sm-3 px-2 product-btn">View Product
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                  </div>
-              </div>
-            </div>
-  
-            <div class="item">
-              <div class="card cardShadow">
-                  <div class="inner">
-                      <img src="./assets/img/product/rdClass12Vol2.jpg" alt="Not Found" class="card-img-top productImg" />
-                  </div>
-                  <div class="card-body py-3">
-                    <h5 class="card-title my-0"><a href="products/hcJee.html" class="link productTitle">Product</a></h5>
-                    <p class="card-text text-secondary">
-                        <small>Namashkaar..... Hello My Friends I am rishi soni from ATC.</small>
-                    </p>
-                    <a href="#" class="btn btn-secondary px-sm-3 px-2 product-btn">View Product
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                  </div>
-              </div>
-            </div>
-  
-            <div class="item">
-              <div class="card cardShadow">
-                  <div class="inner">
-                      <img src="./assets/img/product/hcPart1.jpg" alt="Not Found" class="card-img-top productImg" />
-                  </div>
-                  <div class="card-body py-3">
-                    <h5 class="card-title my-0"><a href="products/hcJee.html" class="link productTitle">Product</a></h5>
-                    <p class="card-text text-secondary">
-                        <small>Namashkaar..... Hello My Friends I am rishi soni from ATC.</small>
-                    </p>
-                    <a href="#" class="btn btn-secondary px-sm-3 px-2 product-btn">View Product
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                  </div>
-              </div>
-            </div>
-  
-            <div class="item">
-              <div class="card cardShadow">
-                  <div class="inner">
-                      <img src="./assets/img/product/hcClass10.jpg" alt="Not Found" class="card-img-top productImg" />
-                  </div>
-                  <div class="card-body py-3">
-                    <h5 class="card-title my-0"><a href="products/hcJee.html" class="link productTitle">Product</a></h5>
-                    <p class="card-text text-secondary">
-                        <small>Namashkaar..... Hello My Friends I am rishi soni from ATC.</small>
-                    </p>
-                    <a href="#" class="btn btn-secondary px-sm-3 px-2 product-btn">View Product
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                  </div>
-              </div>
-            </div>
+        <div class="container mb-5">
+            <a href="cart.html" class="btn btn-secondary cartShopBtn mt-3 px-5 mr-2"><small class="myButton">VIEW CART</small></a>
+            <a href="shop.html" class="btn btn-outline-secondary cartShopBtn mt-3 px-5"><small class="myButton">CONTINUE SHOPPING</small></a>
         </div>
     </section>
-    <!-- || Product Slider End -->
+    <!-- Cart and Shopping Buttons End -->
 
-
+    
     <!-- || FOOTER Start -->
     <footer>
       <div class="Container bg-dark text-white pb-2 mt-4">
@@ -415,7 +276,6 @@
     <!-- Custom Scripts -->
     <script src="./assets/js/custom_js/preloader.js" defer></script>
     <script src="./assets/js/custom_js/navbarToggler.js" async></script>
-    <script src="./assets/js/custom_js/productCarousel.js" async></script>
     <script src="./assets/js/custom_js/productQuantity.js" defer></script>
 
   </body>

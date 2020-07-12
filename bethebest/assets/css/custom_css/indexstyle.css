@@ -82,12 +82,12 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
 }
 
 .owl-carousel .product-btn {
-    background-color: rgba(128,128,128,0.9) !important;
+    background-color: rgba(128,128,128,0.7) !important;
     border: none !important;
 }   
 
 .owl-carousel .product-btn:hover {
-    background-color: rgba(52,58,64,0.8) !important;
+    background-color: rgba(52,58,64,0.7) !important;
 }
 
 

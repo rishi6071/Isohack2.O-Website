@@ -29,14 +29,18 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
 
 .cardShadow{
     transition-duration: 0.6s;
+    -webkit-box-shadow: -1px 9px 40px rgba(0,0,0,0.1);  
+    -moz-box-shadow: -1px 9px 40px rgba(0,0,0,0.1);  
+    box-shadow:-1px 9px 40px rgba(0,0,0,0.1);
     border-radius: 0px;
     border-color: rgba(128,128,128,0.13);
 }
 
 .cardShadow:hover {
-    -webkit-box-shadow: -1px 9px 40px rgba(0,0,0,0.15);  
-    -moz-box-shadow: -1px 9px 40px rgba(0,0,0,0.15);  
-    box-shadow:-1px 9px 40px rgba(0,0,0,0.15);
+    -webkit-box-shadow: -1px 9px 40px rgba(0,0,0,0.18);  
+    -moz-box-shadow: -1px 9px 40px rgba(0,0,0,0.18);  
+    box-shadow:-1px 9px 40px rgba(0,0,0,0.18);
+    border: 0.5px solid #17A2B8;
 }
 
 
@@ -47,7 +51,7 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
 .inner img {
     transition:all 1.2s ease;
 }
-.inner:hover img{
+.cardShadow:hover img{
     transform: scale(1.05);
 }
 
@@ -57,14 +61,15 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
 
 .product-btn { 
     box-shadow: none !important; 
-    font-size: 0.7em !important;
+    font-size: 0.5em !important;
+    font-weight: bold !important;
     text-transform: uppercase !important;
     letter-spacing: 1.2px;
 }
 
 .product-btn i {
     vertical-align: -5px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .card-title a { 

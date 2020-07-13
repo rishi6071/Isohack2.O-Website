@@ -104,3 +104,27 @@ a.faqOpt:hover{
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
+
+
+/* ------------------- || SHOP PAGE ------------------- */
+
+.shop-category {
+    font-size:13px;
+    border: 0;
+    line-height: normal;
+}
+
+.shop-category a { text-decoration: none; }
+.shop-category a:hover { color: rebeccapurple; }
+
+#filter-form input {
+    vertical-align: -10px !important;
+}
+
+@media screen and (max-width:576px) {
+    #shop-product .item {
+        display: block;
+        margin: 0 auto;
+    }
+}
+

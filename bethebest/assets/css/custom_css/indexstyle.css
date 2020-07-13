@@ -79,7 +79,13 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
 }
 
 .card-title a:hover { color: rebeccapurple; }
-.productImg { height:280px; }
+.productImg { height:260px; }
+
+@media screen and (max-width:450px) {
+    .productImg {
+        height: 350px;
+    }
+}
 
 .wrapper .item{
     padding-left: 5px;

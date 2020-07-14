@@ -90,6 +90,11 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
         margin-right: 10%;
     }
 
+    .categoryCard {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .card-stuff .card-title { font-size: 1.1em; }
     .card-stuff .card-text { font-size: 0.9em; }
 }

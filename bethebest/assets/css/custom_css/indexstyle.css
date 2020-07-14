@@ -131,6 +131,9 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
 /* || Join Us Modal */
 
 /* IN MULTIPLE PAGE css file */
+.modal-header button {
+    font-size: 25px !important;
+}
 .modal-title + button:focus {
     border: none;
     outline: none;

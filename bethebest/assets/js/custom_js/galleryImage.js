@@ -16,7 +16,7 @@ for(let i=0;i<modal.length;i++) {
 }
 
 // Get the <span> element that closes the modal
-var span = document.querySelectorAll(".close");
+var span = document.querySelectorAll(".popup-close");
 
 // When the user clicks on <span> (x), close the modal
 for(let j=0;j<span.length;j++) {

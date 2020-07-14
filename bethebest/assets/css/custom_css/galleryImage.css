@@ -11,7 +11,7 @@
   .myImg:hover {opacity: 0.7;}
   
   /* The Modal (background) */
-  .modal {
+  .gallery-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -60,7 +60,7 @@
   }
   
   /* The Close Button */
-  .close {
+  .popup-close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -70,8 +70,8 @@
     transition: 0.3s;
   }
   
-  .close:hover,
-  .close:focus {
+  .popup-close:hover,
+  .popup-close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;

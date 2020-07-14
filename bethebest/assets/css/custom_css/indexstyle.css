@@ -78,6 +78,7 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
     text-decoration: none;
 }
 .card-title a:hover { color: rebeccapurple; }
+.card-stuff .card-text { font-size: 0.8em; }
 
 .productImg { height:260px; }
 
@@ -85,9 +86,16 @@ h2.categoryHeading:hover{ color:rgba(110, 110, 27, 0.6); }
     .productImg { height: 350px; }
 
     .card-stuff {
-        margin-left: 7%;
-        margin-right: 7%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
+
+    .card-stuff .card-title { font-size: 1.1em; }
+    .card-stuff .card-text { font-size: 0.9em; }
+}
+
+@media screen and (max-width:360px) {
+    .productImg { height: 250px; }
 }
 
 .wrapper .item{

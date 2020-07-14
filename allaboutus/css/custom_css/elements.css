@@ -229,33 +229,13 @@
 
 
 /************ || IMAGE GALLERY ************/
-img.gallery-img {
+
+figure .myImg {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.modal-content {
-    border: none;
-}
-.modal-body {
-    background-color: rgba(0,0,0,0.4);
-}
-.modal-body button {
-    color: black;
-}
-
-.modalImg {
-    width: 100%; 
-    height: 350px;
-    object-fit: cover;
-}
-
-@media (max-height:576px) {
-    .modalImg {
-        height: 180px;
-    }
-}
 
 /************ || LIST ************/
 ul.sample-list li:before {

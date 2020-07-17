@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Rishi Soni">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- title tag -->
+  <title>Document</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Google Font & Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom_css/preloader.css">
+  <link rel="stylesheet" href="./assets/css/custom_css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/custom_css/indexStyle.css">
+  <link rel="stylesheet" href="./assets/css/custom_css/typography.css">
+
+</head>
+
+<body onload="loadFunction()">
+
+  <!-- || PRELOADER -->
+  <div class="loading"></div>
+
+  <!-- ----------- || NAVBAR Start ----------- -->
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo ml-4">COFFEE KING</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./authors.html">Authors</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#" data-target="nav-dropdown-1">Help<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#" data-target="nav-dropdown-2">Profile<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Large Screen Dropdown Structure -->
+    <ul id="nav-dropdown-1" class="dropdown-content">
+      <li><a href="./contact.html">Contact Us</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./faqs.html">FAQs</a></li>
+    </ul>
+    <ul id="nav-dropdown-2" class="dropdown-content">
+      <li><a href="./profile.html">Edit Profile</a></li>
+      <li><a href="./cart.html">My Cart</a></li>
+      <li><a href="./myOrders.html">My Orders</a></li>
+    </ul>
+
+    <!-- Mobile Screen Dropdown Structure -->
+    <ul id="sidenav-dropdown-1" class="dropdown-content">
+      <li><a href="./contact.html">Contact Us</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./faqs.html">FAQs</a></li>
+    </ul>
+    <ul id="sidenav-dropdown-2" class="dropdown-content">
+      <li><a href="./profile.html">Edit Profile</a></li>
+      <li><a href="./cart.html">My Cart</a></li>
+      <li><a href="./my">My Orders</a></li>
+    </ul>
+
+    <!-- Side Nav -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Authors</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#" data-target="sidenav-dropdown-1">Help<i
+            class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-trigger" href="#" data-target="sidenav-dropdown-2">Profile<i
+            class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </header>
+  <!-- ----------- || NAVBAR End ----------- -->
+
+  
+  <!-- ----------- || HOME SLIDER Start ----------- -->
+  <section style="margin-bottom: 100px;">
+    <div class="carousel carousel-slider">
+      <a class="carousel-item drk" href="#one!"><img src="./assets/img/home_slider/banner1.jpg" alt=""></a>
+      <a class="carousel-item drk" href="#two!"><img src="./assets/img/home_slider/banner2.jpg" alt=""></a>
+      <a class="carousel-item drk" href="#three!"><img src="./assets/img/home_slider/banner3.jpg" alt=""></a>
+    </div>
+  </section>
+  <!-- ----------- || HOME SLIDER End ----------- -->
+
+
+  <!-- JavaScript (Built-in & Custom) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+
+  <script src="./assets/js/custom_js/preloader.js"></script>
+  <script src="./assets/js/custom_js/navbarToggler.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $(".dropdown-trigger").dropdown();
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
+    });
+  </script>
+
+</body>
+
+</html>

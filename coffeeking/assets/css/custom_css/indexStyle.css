@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HOME SLIDER */
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:768px) {
+    .carousel img { 
+        height: 350px; 
+        object-fit: cover;
+    }   
+}
+
+.drk:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #6f4e37;
+    opacity: 0.5;
+}

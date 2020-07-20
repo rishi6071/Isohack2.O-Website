@@ -28,12 +28,13 @@ body {
 
 /******** || BANNER ********/
 div#banner-outer {
-    background-color: #182153;
+    background: #182153;
     padding: 20px;
 }
 
 div#banner-inner {
     width: 50%;
+    z-index: 1;
     padding: 30px 20px;
     margin: 0 auto;
     background-color: lightgrey;

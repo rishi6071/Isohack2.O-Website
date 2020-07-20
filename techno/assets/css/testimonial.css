@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+body{
+    font-family: "Fira Sans" , sans-serif;
+}
+
+.profile-image{
+    border-radius: 50%;
+}
+
+.profile-name{
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.profile-name::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 2em;
+    background: rgb(43, 159, 194);
+    opacity: 0.35;
+}
+
+.profile-position{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.profile-body{
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(0, 0,0, 0.4);
+    width: 65%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgb(43, 159, 194);
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+@media (min-width:600px){
+    .card{
+        flex-direction: row;
+    }
+    .profile-main{
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile-name::after{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 80%;
+    }
+}

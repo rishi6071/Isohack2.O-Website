@@ -24,6 +24,7 @@ a.header-contact {
     font-weight: bold;
     letter-spacing: 1px;
     float: right;
+    margin-top: 12px;
 }
 
 .header-contact span { 

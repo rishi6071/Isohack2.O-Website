@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="Megha Sharma, Rishi Soni, Ofrin Lopes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- title tag -->
+    <title>Services</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- FONT AWESOME SCRIPT KIT CODE OF W3SCHOOL -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/testimonial.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/gotoTopButton.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+</head>
+
+<body>
+
+    <!-- || HEADER & NAVBAR Start -->
+    <header>
+        <div id="top"></div>
+        <!-- Logo and phone -->
+        <div class="container-fluid" id="header-logo-contact">
+            <p class="pt-3 pb-0 px-4">
+                <a href="./index.html" class="brand-logo">
+                    <span class="">Logo</span>
+                    <!-- <img src="./assets/img/logo/brandLogo.png" class="ml-3" alt="Brand-logo" > -->
+                </a>
+                <a href="tel:1234567890" class="header-contact">
+                    <span class='fas fa-phone-square-alt'></span> 1234 567 890
+                </a>
+            </p>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg p-0">
+            <a class="navbar-brand brand-logo brand-logo-toggler" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars menu-icon" aria-hidden="true" id="bar" onclick="openMenu(this)"></i>
+                    <i class="fa fa-times menu-close-icon" aria-hidden="true" id="cross" onclick="closeMenu(this)"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">About</a>
+            <a href="#contact">Services</a>
+            <a href="#about">Blog</a>
+            <a href="#contact">Contact us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> -->
+    </header>
+    <!-- || HEADER & NAVBAR End -->
+
+
+    <!-- || QUALITY CONTENT & QUOTE FORM Start -->
+    <section class="quality-quote-form">
+        <div class="container">
+            <div class="row">
+
+                <!-- Quality Content -->
+                <div class="col-md-7 py-md-5 py-4 quality-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolor aut minus id similique iste
+                        dolorum praesentium aliquam repellat maiores! Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis, amet?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, exercitationem quam
+                        accusantium sit et voluptate esse voluptatibus? Tempora, impedit qui. Lorem ipsum, dolor sit
+                        amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, exercitationem quam
+                        accusantium sit et voluptate esse voluptatibus? Tempora, impedit qui. Lorem ipsum dolor sit
+                        amet.</p>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit. Veritatis,
+                        exercitationem quam accusantium sit et voluptate esse voluptatibus? Tempora, impedit qui. Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+
+                <!-- Quote Form -->
+                <div class="col-md-4 offset-md-1 bg-white py-3 px-4 form-shadow">
+                    <form action="#" id="contact-form">
+                        <div class="form-group mt-4">
+                            <label for="contact-name">Name:</label>
+                            <input type="text" id="contact-name" name="user-name" class="form-control" />
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="contact-mail">Email:</label>
+                            <input type="mail" id="contact-mail" name="user-mail" class="form-control" />
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="contact-message">Message</label>
+                            <textarea name="user-message" id="contact-message" rows="5" class="form-control"
+                                placeholder=""></textarea>
+                        </div>
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-block btn-warning text-white">GET A QUOTE</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- || QUALITY CONTENT & QUOTE FORM End -->
+
+
+    <!-- || SERVICES Start -->
+    <main>
+        <div class="my-5">
+            <h2 class="mb-3 service-heading">BEST SERVICES <span class="text-warning">EVER</span></h2>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mt-3">
+                        <div class="card services-card">
+                            <div class="card-body text-center">
+                                <img class="card-img-top rounded-circle" src="./assets/img/testimonial/sample.jpg"
+                                    alt="Card image cap">
+                                <p class="card-title">Service1</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 mt-3">
+                        <div class="card services-card">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="./assets/img/testimonial/sample.jpg"
+                                    alt="Card image cap">
+                                <p class="card-title">Service2</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 mt-3">
+                        <div class="card services-card">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="./assets/img/testimonial/sample.jpg"
+                                    alt="Card image cap">
+                                <p class="card-title">Service3</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- || SERVICES End -->
+
+
+    <!-- || TESTIMONIAL Start -->
+    <section>
+        <div class="py-5 mb-5">
+            <h2 class="mb-4 service-heading">TESTIMONIAL</h2>
+            <div>
+                <div class="card testimonial-card mb-3 p-md-4 p-3">
+                    <div class="profile-sidebar">
+                        <img class="profile-image" src="./assets/img/testimonial/sample.jpg" alt="image" height="125px">
+                    </div>
+
+                    <div class="profile-main">
+                        <h2 class="profile-name">Ramsey Harper</h2>
+                        <p class="profile-position">Graphic Designer</p>
+                        <p class="profile-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam animi doloribus!
+                            Sapiente,
+                            iusto.
+                            Debitis nam quisquam, sequi, aliquid, amet laboriosam at rem earum unde quae excepturi eius
+                            numquam
+                            error?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- || TESTIMONIAL End -->
+
+
+    <!-- || OUR WORK Start -->
+    <section>
+        <div class="our-work-bg-gradient py-5">
+            <h2 class="mb-4 service-heading">OUR WORK</h2>
+
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6 offset-md-1 mt-3">
+                        <div class="card text-center our-work-card">
+                            <img class="card-img-top" src="./assets/img/testimonial/sample.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
+                                    ducimus.</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-6 mt-3">
+                        <div class="card text-center our-work-card">
+                            <img class="card-img-top" src="./assets/img/testimonial/sample.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                                    incidunt!</p>
+                                <a href="#" class="btn btn-secondary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- || OUR WORK End -->
+
+
+    <!-- || FOOTER Start -->
+    <footer>
+        <div class="container pb-5">
+            <div class="row">
+                <!-- || Contact Information -->
+                <div class="col-md-4 col-sm-6 col-12 pt-5">
+                    <h4 class="footer-section-heading">Contact Information</h4>
+                    <div class="contact-info">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">&nbsp; TechnoColabs, Indore.</span>
+                        </div>
+                        <div class="place">
+                            <a href="tel:1234567890"><span class="fas fa-phone-alt"></span>&nbsp; 12345 67890 </a>
+                        </div>
+                        <div class="place">
+                            <a href="mailto:technocolabs@gmail.com">
+                                <span class="fas fa-envelope"></span>&nbsp; technocolabs@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- || Footer Menu -->
+                <div class="col-md-3 offset-md-1 col-sm-6 col-12 px-md-4 pt-5">
+                    <h4 class="footer-section-heading">Footer Menu</h4>
+                    <ul class="footer-menu">
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="./privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- || Form & Follow Us -->
+                <div class="col-md-4 col-sm-6 col-12 pt-5">
+                    <h4 class="footer-section-heading">Our Newsletter</h4>
+                    <form class="form-inline">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group mb-2">
+                                    <label for="signup" class="sr-only">Password</label>
+                                    <input type="text" class="form-control bg-transparent" id="signup">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <button type="submit" class="btn btn-secondary mb-2">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <h4 class="footer-section-heading mt-3">Follow Us</h4>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-google-plus-g	"></span></a>
+                        <a href="#"><span class="fab fa-pinterest-p"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- || FOOTER End -->
+
+
+    <!-- Go to Top Button Start -->
+    <section>
+        <div class="top-button-position">
+            <a href="#top" title="Go To Top" class="btn btn-success top-button">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Go to Top Button End -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script src="./assets/js/navbarToggler.js"></script>
+
+</body>
+
+</html>

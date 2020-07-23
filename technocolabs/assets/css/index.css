@@ -1,0 +1,116 @@
+/* || index.html */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* When user selects the text content by pressing the cursor */
+::selection {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* || All Headings like Services, Our Work, etc */
+.service-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: hsl(200, 18%, 26%);
+    letter-spacing: 1px;
+}
+
+/* ---------- || HOME BANNER ---------- */
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.font-rowdies {
+    font-family: 'Rowdies', cursive;
+}
+
+/* ---------- || SERVICES CARD ---------- */
+.services-card .card-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsl(200, 18%, 26%);
+}
+
+.services-card img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- || OUR WORK CARD ---------- */
+.our-work-card, .services-card {
+    -webkit-box-shadow: 0px 3px 5px lightgrey;
+    -ms-box-shadow: 0px 3px 5px lightgrey;
+    box-shadow: 0px 3px 5px lightgrey;
+}
+
+.our-work-bg-gradient {
+    background-color: lightgrey;
+    background: linear-gradient(to bottom right, whitesmoke, #f9fbe7);
+}
+
+.our-work-card .card-img-top {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+}
+
+.our-work-card .card-title {    
+    color: hsl(200, 18%, 26%);
+}
+
+.our-work-card .btn {
+    padding: 5px 25px;
+    border-radius: 40px;
+    transition: 0.8s;
+}
+
+.our-work-card .btn:hover { 
+    border-radius: 2px; 
+    -webkit-box-shadow: 1px 2px 3px grey;
+    -ms-box-shadow: 1px 2px 3px grey;
+    box-shadow: 1px 2px 3px grey;
+}
+
+
+/* ---------- || Quality Content & Quote Form ---------- */
+.quality-quote-form {
+    background: rgba(128, 128, 128, 0.1);
+    padding: 2.3em 1em;
+}
+
+.quality-content { 
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: hsla(200, 18%, 26%, 0.6);
+    font-size: 0.95em;
+}
+
+.quality-content a { text-decoration: none; }
+
+.quality-content > p {
+    padding-top: 18px;
+    line-height: 1.5;
+}
+
+.quality-content > p:first-child {
+    padding-top: 0;
+}

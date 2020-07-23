@@ -63,7 +63,7 @@ nav.navbar { background: lightgrey; }
     letter-spacing: 1px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 20px 50px !important;
+    padding: 16px 50px !important;
 }
 
 .nav-item a.nav-link:hover { color: whitesmoke; }

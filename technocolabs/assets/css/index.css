@@ -30,13 +30,23 @@ html {
 }
 
 /* ---------- || HOME BANNER ---------- */
+#banner {
+    background: #f9fbe7;
+}
+
 .banner-img {
     width: 100%;
-    height: auto;
+    max-height: auto;
+    object-fit: cover;
 }
 
 .font-rowdies {
     font-family: 'Rowdies', cursive;
+}
+
+.banner-obj-img {
+    width: 90px;
+    height: 90px;
 }
 
 /* ---------- || SERVICES CARD ---------- */

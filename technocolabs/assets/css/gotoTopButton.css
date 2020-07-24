@@ -15,6 +15,7 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     opacity: 0.6;
+    transition: 0.3s;
 }
 
 .top-button i { 
@@ -22,24 +23,23 @@
     color: white;
  }
 
- @keyframes goto {
-     from {
-        transform: scale(0);
-        opacity: 0.6;
-     }
-     to {
-        background: lightseagreen;
-        transform: scale(1);
-        opacity: 1;  
-     }
- }
-
 .top-button:hover {
-    animation-name: goto;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    background: lightseagreen;
+    opacity: 1;  
 
     -webkit-box-shadow: -1px 9px 20px rgba(128, 128, 128, 04); 
     -moz-box-shadow: -1px 9px 20px rgba(128, 128, 128, 0.4);
     box-shadow: -1px 9px 20px rgba(128, 128, 128, 0.4);
+}
+
+@keyframes goto {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.top-button:hover i {
+    animation-name: goto;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }

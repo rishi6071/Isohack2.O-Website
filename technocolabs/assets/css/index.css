@@ -129,16 +129,25 @@ html {
 
 
 /* ---------- || Happy Clients ---------- */
+.carousel-item {
+    background: white !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .thematic-break {
     width: 10%;
     border: 1px solid rebeccapurple;
 }
 
 .clients-card { 
+    min-height: 300px;
+    padding-top: 20px;
     font-family: Arial !important;
 }
 
 .clients-card img {
+    margin: auto;
     max-width: 80px;
     height: 80px;
     border-radius: 50%;

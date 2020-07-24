@@ -41,5 +41,5 @@
     animation-name: goto;
     animation-timing-function: ease;
     animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
 }

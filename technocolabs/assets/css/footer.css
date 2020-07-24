@@ -36,6 +36,11 @@ footer ul.footer-menu a:hover { color: white; }
 
 
 /* || SIGN UP FORM */
+footer input { 
+    background: rgba(255,255,255,0.5) !important; 
+    border-color: #6C757D !important;
+}
+
 footer input:focus { background-color: lightgrey !important; }
 
 footer button {

@@ -23,11 +23,12 @@ html {
 /* || All Headings like Services, Our Work, etc */
 .service-heading {
     text-align: center;
-    font-size: 28px;
+    font-size: 33px;
     font-weight: 600;
     color: hsl(200, 18%, 26%);
     letter-spacing: 1px;
 }
+
 
 /* ---------- || HOME BANNER ---------- */
 #banner {
@@ -49,6 +50,7 @@ html {
     height: 90px;
 }
 
+
 /* ---------- || SERVICES CARD ---------- */
 .services-card .card-title {
     font-size: 1.3em;
@@ -66,7 +68,7 @@ html {
 
 
 /* ---------- || OUR WORK CARD ---------- */
-.our-work-card, .services-card {
+.our-work-card, .services-card, .clients-card {
     -webkit-box-shadow: 0px 3px 5px lightgrey;
     -ms-box-shadow: 0px 3px 5px lightgrey;
     box-shadow: 0px 3px 5px lightgrey;
@@ -123,4 +125,44 @@ html {
 
 .quality-content > p:first-child {
     padding-top: 0;
+}
+
+
+/* ---------- || Happy Clients ---------- */
+.thematic-break {
+    width: 10%;
+    border: 1px solid rebeccapurple;
+}
+
+.clients-card { 
+    font-family: Arial !important;
+}
+
+.clients-card img {
+    max-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.clients-card .card-text {
+    font-size: 0.8em;
+    color: #6C757D;
+    font-weight: 500;
+}
+
+.clients-card .client-info { 
+    line-height: 0.7;
+    font-size: 0.9em;
+ }
+
+.clients-card .client-info p:first-child {
+    font-weight: bold;
+}
+
+.clients-card .client-info p:last-child {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: 600;
 }

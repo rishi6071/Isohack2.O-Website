@@ -9,17 +9,37 @@
 }
 
 .top-button {
-    font-size: 1rem;
+    background: rgba(0,0,0,0.5);
     font-weight: bold;
     padding-top: 15px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+    opacity: 0.6;
 }
 
-.top-button i { font-size: 1.3em; }
+.top-button i { 
+    font-size: 1.3em;
+    color: white;
+ }
+
+ @keyframes goto {
+     from {
+        transform: scale(0);
+        opacity: 0.6;
+     }
+     to {
+        background: lightseagreen;
+        transform: scale(1);
+        opacity: 1;  
+     }
+ }
 
 .top-button:hover {
-    -webkit-box-shadow: -1px 9px 20px rgba(128, 128, 128, 0.4); 
+    animation-name: goto;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    -webkit-box-shadow: -1px 9px 20px rgba(128, 128, 128, 04); 
     -moz-box-shadow: -1px 9px 20px rgba(128, 128, 128, 0.4);
     box-shadow: -1px 9px 20px rgba(128, 128, 128, 0.4);
 }

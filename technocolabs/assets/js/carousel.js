@@ -1,6 +1,6 @@
 
 // TESTIMONIAL
-$('.owl-carousel').owlCarousel({
+$('.testimonial').owlCarousel({
     loop:true,
     margin:5,
     nav:true,
@@ -8,8 +8,14 @@ $('.owl-carousel').owlCarousel({
         0:{
             items:1
         },
+        450:{
+            items:2
+        },
+        768:{
+            items:3
+        },
         1300:{
-            items:1
+            items:5
         }
     }
   })

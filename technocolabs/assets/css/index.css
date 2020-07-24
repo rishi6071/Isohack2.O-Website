@@ -52,6 +52,14 @@ html {
 
 
 /* ---------- || SERVICES CARD ---------- */
+.company-services .item { 
+    text-align: center; 
+    background: white !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.company-services img { margin: auto; }
+
 .services-card .card-title {
     font-size: 1.3em;
     font-weight: bold;
@@ -67,7 +75,7 @@ html {
 }
 
 
-/* ---------- || OUR WORK CARD ---------- */
+/* ---------- || OUR WORK CARD ( Services Page ) ---------- */
 .our-work-card, .services-card, .clients-card {
     -webkit-box-shadow: 0px 3px 5px lightgrey;
     -ms-box-shadow: 0px 3px 5px lightgrey;

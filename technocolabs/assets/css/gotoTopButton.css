@@ -33,13 +33,13 @@
 }
 
 @keyframes goto {
-    from { transform: scale(0); }
-    to { transform: scale(1); }
+    from { transform: scale(0) rotateX(0deg); }
+    to { transform: scale(1) rotateX(360deg); }
 }
 
 .top-button:hover i {
     animation-name: goto;
     animation-timing-function: ease;
-    animation-duration: 0.3s;
+    animation-duration: 0.7s;
     animation-fill-mode: both;
 }

@@ -65,7 +65,17 @@ footer button:hover { background: white; }
     transition: .3s;
 }
 
-.social span:hover {
+@keyframes social {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.social a:hover span {
+    animation-name: social;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    
     background: white;
     color: hsl(200, 18%, 26%);
 }

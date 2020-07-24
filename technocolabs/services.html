@@ -13,6 +13,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/css/inbuilt_css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/inbuilt_css/owl.theme.default.min.css">
 
     <!-- FONT AWESOME SCRIPT KIT CODE OF W3SCHOOL -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -37,7 +41,7 @@
         <div class="container-fluid" id="header-logo-contact">
             <p class="pt-3 pb-0 px-4">
                 <a href="./index.html" class="brand-logo">
-                    <img src="./assets/img/logo/brandLogo.png" alt="Brand-logo" >
+                    <img src="./assets/img/logo/brandLogo.png" alt="Brand-logo">
                 </a>
                 <a href="tel:1234567890" class="header-contact">
                     <span class='fas fa-phone-square-alt'></span> 1234 567 890
@@ -48,7 +52,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg p-0">
             <a class="navbar-brand brand-logo brand-logo-toggler" href="#">
-                <img src="./assets/img/logo/brandLogo.png" class="" alt="Brand-logo" >
+                <img src="./assets/img/logo/brandLogo.png" class="" alt="Brand-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,6 +77,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login/Signup <i class="fas fa-sign-in-alt"></i></a>
                     </li>
                 </ul>
             </div>
@@ -130,79 +137,140 @@
     <!-- || QUALITY CONTENT & QUOTE FORM End -->
 
 
-    <!-- || SERVICES Start -->
+    
+    <!-- SERVICES SLIDER Start -->
     <main>
-        <div class="my-5">
-            <h2 class="mb-3 service-heading">BEST SERVICES <span class="text-warning">EVER</span></h2>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 mt-3">
-                        <div class="card services-card h-100">
-                            <div class="card-body text-center">
-                                <img class="card-img-top rounded-circle" src="./assets/img/testimonial/sample.jpg"
-                                    alt="Card image cap">
-                                <p class="card-title">Service1</p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
+        <h2 class="mb-3 mt-5 service-heading">BEST SERVICES <span class="text-warning">EVER</span></h2>
+        <div class="container company-services owl-carousel owl-theme py-2">
+            <div class="item">
+                <div class="card services-card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="./assets/img/testimonial/sample.jpg" alt="Card image cap">
+                        <p class="card-title">Service2</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                        </p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-md-4 col-sm-6 mt-3">
-                        <div class="card services-card h-100">
-                            <div class="card-body text-center">
-                                <img class="card-img-top" src="./assets/img/testimonial/sample.jpg"
-                                    alt="Card image cap">
-                                <p class="card-title">Service2</p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
+            <div class="item">
+                <div class="card services-card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="./assets/img/testimonial/sample.jpg" alt="Card image cap">
+                        <p class="card-title">Service2</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                        </p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-md-4 col-sm-6 mt-3">
-                        <div class="card services-card h-100">
-                            <div class="card-body text-center">
-                                <img class="card-img-top" src="./assets/img/testimonial/sample.jpg"
-                                    alt="Card image cap">
-                                <p class="card-title">Service3</p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                            </div>
-                        </div>
+            <div class="item">
+                <div class="card services-card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="./assets/img/testimonial/sample.jpg" alt="Card image cap">
+                        <p class="card-title">Service2</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card services-card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="./assets/img/testimonial/sample.jpg" alt="Card image cap">
+                        <p class="card-title">Service2</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card services-card h-100">
+                    <div class="card-body">
+                        <img class="card-img-top" src="./assets/img/testimonial/sample.jpg" alt="Card image cap">
+                        <p class="card-title">Service2</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <!-- || SERVICES End -->
+    <!-- || SERVICES SLIDER End -->
 
 
     <!-- || TESTIMONIAL Start -->
     <section>
-        <div class="py-5 mb-5">
+        <div class="container text-center mt-5 pt-4">
             <h2 class="mb-4 service-heading">TESTIMONIAL</h2>
-            <div>
-                <div class="card testimonial-card mb-3 p-md-4 p-3">
-                    <div class="profile-sidebar">
-                        <img class="profile-image" src="./assets/img/testimonial/sample.jpg" alt="image" height="125px">
-                    </div>
+        </div>
+        <div class="container-fluid testimonial owl-carousel owl-theme py-2 mb-4">
+            <div class="item">
+                <div class="card testimonial-card p-md-4 p-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                            <img class="profile-image" src="./assets/img/testimonial/sample.jpg" alt="image">
+                        </div>
 
-                    <div class="profile-main">
-                        <h2 class="profile-name">Ramsey Harper</h2>
-                        <p class="profile-position">Graphic Designer</p>
-                        <p class="profile-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam animi doloribus!
-                            Sapiente,
-                            iusto.
-                            Debitis nam quisquam, sequi, aliquid, amet laboriosam at rem earum unde quae excepturi eius
-                            numquam
-                            error?
-                        </p>
+                        <div class="col-lg-9 col-md-8">
+                            <h2 class="profile-name">Ramsey Harper</h2>
+                            <p class="profile-position">Graphic Designer</p>
+                            <p class="profile-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam animi
+                                doloribus!
+                                Sapiente, iusto. Debitis nam quisquam, sequi, aliquid, amet laboriosam at rem earum unde
+                                quae excepturi eius numquam error?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card testimonial-card p-md-4 p-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                            <img class="profile-image" src="./assets/img/testimonial/sample.jpg" alt="image">
+                        </div>
+
+                        <div class="col-lg-9 col-md-8">
+                            <h2 class="profile-name">Ramsey Harper</h2>
+                            <p class="profile-position">Graphic Designer</p>
+                            <p class="profile-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam animi
+                                doloribus!
+                                Sapiente, iusto. Debitis nam quisquam, sequi, aliquid, amet laboriosam at rem earum unde
+                                quae excepturi eius numquam error?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card testimonial-card p-md-4 p-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                            <img class="profile-image" src="./assets/img/testimonial/sample.jpg" alt="image">
+                        </div>
+
+                        <div class="col-lg-9 col-md-8">
+                            <h2 class="profile-name">Ramsey Harper</h2>
+                            <p class="profile-position">Graphic Designer</p>
+                            <p class="profile-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam animi
+                                doloribus!
+                                Sapiente, iusto. Debitis nam quisquam, sequi, aliquid, amet laboriosam at rem earum unde
+                                quae excepturi eius numquam error?
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,9 +404,36 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/inbuilt_js/owl.carousel.min.js"></script>
+
 
     <!-- Custom Scripts -->
     <script src="./assets/js/navbarToggler.js"></script>
+    <script>
+        $('.testimonial').owlCarousel({
+            loop: true,
+            margin: 5,
+            nav: true,
+            responsive: {
+                0: { items: 1 },
+                1300: { items: 1 }
+            }
+        })
+    </script>
+
+    <script>
+        $('.company-services').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                768: { items: 3 },
+                1300: { items: 3 }
+            }
+        })
+    </script>
 
 </body>
 

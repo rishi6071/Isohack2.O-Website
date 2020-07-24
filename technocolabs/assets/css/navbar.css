@@ -14,8 +14,14 @@ a.brand-logo:hover { opacity: 0.7; }
 .brand-logo img {
     width: 150px;
     height: 50px;
-    transform: scale(1.5);
+    transform: scale(1.8);
     object-fit: cover;
+}
+
+@media screen and (max-width:992px) {
+    .brand-logo img {
+        margin-left: 15px;
+    }
 }
 
 a.header-contact {
@@ -62,9 +68,10 @@ nav.navbar { background: lightgrey; }
 .nav-item a.nav-link {
     color: hsl(200, 18%, 26%);
     letter-spacing: 1px;
+    font-size: 14.4px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 16px 50px !important;
+    padding: 16px 40px !important;
 }
 
 .nav-item a.nav-link:hover { color: whitesmoke; }
@@ -75,7 +82,7 @@ nav.navbar { background: lightgrey; }
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
 
     #header-logo-contact { display: none; }
 

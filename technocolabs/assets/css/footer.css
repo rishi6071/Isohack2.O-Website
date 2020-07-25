@@ -34,6 +34,11 @@ footer .contact-info a:hover { color: white; }
 footer ul.footer-menu { list-style-type: none; }
 footer ul.footer-menu a:hover { color: white; }
 
+.footer-active {
+    color: white !important;
+    font-weight: bold !important;
+}
+
 
 /* || SIGN UP FORM */
 footer input { 

@@ -81,9 +81,9 @@ nav.navbar { background: lightgrey; }
         border: none !important;
     }
 
-    .brand-logo img { transform: scale(1.45); }
+    .brand-logo img { transform: scale(1.55); }
 
-    .navbar { padding: 10px 15px !important; }
+    .navbar { padding: 12px 15px !important; }
 
     .nav-item a.nav-link { 
         padding: 8px 40px !important;

@@ -76,7 +76,122 @@
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login/Signup <i class="fas fa-sign-in-alt"></i></a>
+                        <!-- Triggering Modal -->
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#loginSignup">Login/Signup
+                            <i class="fas fa-sign-in-alt"></i></a>
+
+                        <!-- Modal -->
+                        <div class="modal" id="loginSignup" tabindex="-1" role="dialog"
+                            aria-labelledby="loginSignupTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title pl-2 brand-logo" id="exampleModalLongTitle"><img
+                                                src="./assets/img/logo/brandLogo.png" alt="brnad-logo"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Login or Signup Option -->
+                                        <div class="row">
+                                            <div class="col-6 text-center py-0">
+                                                <a href="#" class="h6 active-opt" id="login-opt">Login</a>
+                                                <hr class="w-100 active-border">
+                                            </div>
+                                            <div class="col-6 text-center py-0">
+                                                <a href="#" class="h6" id="signup-opt">Signup</a>
+                                                <hr class="w-100" id="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Login Fields -->
+                                        <form action="#" method="post" id="login-form" class="d-block">
+                                            <div class="form-group">
+                                                <label for="login-email" class="form-label">Email Id:</label>
+                                                <input type="email" name="login-email" id="login-email"
+                                                    class="form-control" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="login-password">Password:</label>
+                                                <input type="password" name="login-password" id="login-password"
+                                                    class="form-control" required>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="login-remember"
+                                                    name="login-remember" checked>
+                                                <label class="custom-control-label text-dark"
+                                                    for="login-remember">Remember Me</label>
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <button type="submit"
+                                                            class="btn btn-success btn-block">Submit</button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="reset"
+                                                            class="btn btn-info btn-block">Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <!-- Signup Fields -->
+                                        <form action="#" method="post" id="signup-form" class="d-none">
+                                            <div class="form-group">
+                                                <label for="signup-username">Username:</label>
+                                                <input type="text" class="form-control" name="signup-username"
+                                                    id="signup-username" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="signup-email">Email Id:</label>
+                                                <input type="email" class="form-control" name="signup-email"
+                                                    id="signup-email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="signup-contact">Contact No.</label>
+                                                <input type="tel" name="signup-contact" id="signup-contact"
+                                                    class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="signup-pswd">Password:</label>
+                                                <input type="password" name="signup-pswd" id="signup-pswd"
+                                                    class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="signup-cpswd">Confirm Password:</label>
+                                                <input type="password" name="signup-cpswd" id="signup-cpswd"
+                                                    class="form-control" required>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck"
+                                                    name="example1" checked>
+                                                <label class="custom-control-label text-dark" for="customCheck">Remember
+                                                    Me</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <small>By creating an account, You agree to our <a href="./privacy.html"
+                                                        class="text-warning">Terms & Policy</a></small>
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <button type="submit"
+                                                            class="btn btn-success btn-block">Submit</button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="reset"
+                                                            class="btn btn-info btn-block">Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -258,6 +373,7 @@
 
     <!-- Custom Scripts -->
     <script src="./assets/js/navbarToggler.js"></script>
+    <script src="./assets/js/loginSignupForm.js" defer></script>
 
 </body>
 

@@ -11,7 +11,7 @@
 }
 
 .page { padding: 25px; }
-.box { padding-top: 30px; }
+.box { padding: 30px; }
 
 .box h2 {
     font-family: 'Constantia';
@@ -21,10 +21,14 @@
 .box p, li { font-size: 0.9em; }
 
 .privacy-container {
-    margin-right: auto;
-    margin-left: auto;
+    
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
+    border: 2px solid rgba(161, 148, 148, 0.521);
+    margin: 0 7% !important;
+    display: inline-block;
+    box-shadow: 5px 5px 15px lightgrey;
 }
 
 .privacy-container ul {

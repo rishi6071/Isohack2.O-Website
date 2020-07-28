@@ -2,7 +2,7 @@
 $('.testimonial').owlCarousel({
     loop: true,
     margin: 5,
-    nav: true,
+    nav: false,
     responsive: {
         0: { items: 1 },
         1300: { items: 1 }
@@ -14,7 +14,7 @@ $('.testimonial').owlCarousel({
 $('.company-services').owlCarousel({
     loop: true,
     margin: 30,
-    nav: true,
+    nav: false,
     responsive: {
         0: { items: 1 },
         576: { items: 2 },

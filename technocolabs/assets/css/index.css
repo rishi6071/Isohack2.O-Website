@@ -105,12 +105,7 @@ a { text-decoration: none !important; }
     transition: 0.8s;
 }
 
-.our-work-card .btn:hover { 
-    border-radius: 2px; 
-    -webkit-box-shadow: 1px 2px 3px grey;
-    -ms-box-shadow: 1px 2px 3px grey;
-    box-shadow: 1px 2px 3px grey;
-}
+.our-work-card .btn:hover {  border-radius: 2px; }
 
 
 /* ---------- || Quality Content & Quote Form ---------- */

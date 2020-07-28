@@ -29,12 +29,6 @@
     letter-spacing: 1px;
 }
 
-#contact-form .btn:hover {
-    -webkit-box-shadow: 1px 1px 2px grey;
-    -ms-box-shadow: 1px 1px 2px grey;
-    box-shadow: 1px 1px 2px grey;
-}
-
 @media screen and (max-width:576px) {
 
     #contact-form .form-inline {

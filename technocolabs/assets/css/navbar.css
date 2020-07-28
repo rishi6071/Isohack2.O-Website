@@ -133,12 +133,6 @@ nav.navbar { background: lightgrey; }
     text-transform: uppercase;
 }
 
-.navbar .modal-body button:hover {
-    -webkit-box-shadow: 0px 3px 5px rgba(128,128,128,0.7);
-    -ms-box-shadow: 0px 3px 5px rgba(128,128,128,0.7);
-    box-shadow: 0px 3px 5px rgba(128,128,128,0.7);
-}
-
 a#login-opt, a#signup-opt { 
     font-weight: bolder; 
     transition: 0.8s;

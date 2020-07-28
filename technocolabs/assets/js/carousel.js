@@ -22,3 +22,15 @@ $('.company-services').owlCarousel({
         1300: { items: 3 }
     }
 })
+
+// OUR WORK Carousel
+$('.our-work').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        1600: { items: 3 }
+    }
+});

@@ -1,5 +1,5 @@
 /* Page Preloader of index.html */
-.loading{
+.loading {
     width: 100vw;
     height: 100vh;
     /* https://media1.giphy.com/media/RgzAimVNu51jHb3fGi/giphy.gif */
@@ -10,4 +10,10 @@
     position: fixed;
     z-index: 99999;
     background-size: 10%;
+}
+
+@media screen and (max-width:768px) {
+    .loading {
+        background-size: 30%;
+    }
 }

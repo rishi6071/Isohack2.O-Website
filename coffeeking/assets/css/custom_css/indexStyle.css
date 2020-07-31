@@ -12,6 +12,7 @@
 }
 
 /* ------------- || HOME BANNER SLIDER ------------- */
+
 .slider img {
     width: 100%;
     height: inherit;
@@ -49,17 +50,30 @@
 }
 
 /* || COFFEE CONTENT */
+
 #coffee-content img {
     display: block;
     margin: auto;
 }
 
 /* || PARALLAX  */
+
 .parallax-container.drk::after {
     opacity: .55;
 }
 
+.parallax-container {
+    height: 500px;
+}
+
+@media screen and (max-width:576px) {
+    .parallax-container {
+        height: 300px;
+    }
+}
+
 /* || SERVICES */
+
 .services i {
     font-size: 75px;
     color: #4b301b;
@@ -67,7 +81,7 @@
     text-align: center;
 }
 
-.services i + p {
+.services i+p {
     margin-top: 15px;
     text-align: center;
 }
@@ -75,5 +89,5 @@
 @media screen and (max-width:450px) {
     .services i {
         font-size: 50px;
-    }   
+    }
 }

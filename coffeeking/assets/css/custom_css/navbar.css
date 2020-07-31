@@ -3,19 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 /* font-family: 'Merienda One', cursive; */
 
+.brand-logo {
+    margin-left: 15px;
+    font-size: 1.7em !important;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
 .nav-wrapper {
     background-color: #4b301b;
 }
 
-.brand-logo {
-    margin-left: 15px;
-    font-size: 1.7em !important;   
-    font-family: 'Sedgwick Ave Display', cursive;
+.nav-wrapper a {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 @media screen and (max-width:768px) {
     .brand-logo {
-        font-size: 1.4em !important;
+        font-size: 1.2em !important;
+        margin-left: 0px;
     }
 }
 

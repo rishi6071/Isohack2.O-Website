@@ -10,4 +10,10 @@ $(document).ready(function () {
     duration: 200
   });
   $('.parallax').parallax();
+  $('.carousel').carousel({
+    numVisible: 7,
+    shift: 40,
+    padding: 40
+  });
+  $('.fixed-action-btn').floatingActionButton();
 });

@@ -25,7 +25,7 @@ else if (difficultyLevel == 'm' || difficultyLevel == 'medium') {
     difficultyField.textContent = 'Medium';
 }
 else if (difficultyLevel == 'h' || difficultyLevel == 'hard') {
-    timer = 50;
+    timer = 100;
     difficultyField.textContent = 'Hard';
 }
 
@@ -73,31 +73,38 @@ for (i = 0; i < N; i++) {
 /**---------> Key Detection <---------**/
 
 let state = 0;      // 0 -> Right, 1 -> Down, 2 -> Left, 3 -> Up
+var customBtn;
 
 const handleKey = (e) => {
     // With the help of this, we can detect which key has been pressed through the event occured on window
     e = e || window.event;
     let play = false;
 
+    // Button When user works on Moible or iPad Systems
+    document.querySelector('#upBtn').onclick = function() { customBtn = 3; };
+    document.querySelector('#leftBtn').onclick = function() { customBtn = 2; };
+    document.querySelector('#rightBtn').onclick = function() { customBtn = 0; };
+    document.querySelector('#downBtn').onclick = function() { customBtn = 1; };
+
     /** state condition are mentioned bczz if already snake is moving in a particular direction
      *  then the keypress on same direction and "just" opposite direction should be ignore.
       */
-    if ((e.keyCode == '38' || e.keyCode == '87') && state != 1 && state != 3) {
+    if ((e.keyCode == '38' || e.keyCode == '87' || customBtn == 3) && state != 1 && state != 3) {
         // Up Direction
         state = 3;
         play = true;
     }
-    else if ((e.keyCode == '40' || e.keyCode == '83') && state != 1 && state != 3) {
+    else if ((e.keyCode == '40' || e.keyCode == '83' || customBtn == 1) && state != 1 && state != 3) {
         // Down Direction
         state = 1;
         play = true;
     }
-    else if ((e.keyCode == '37' || e.keyCode == '65') && state != 2 && state != 0) {
+    else if ((e.keyCode == '37' || e.keyCode == '65' || customBtn == 2) && state != 2 && state != 0) {
         // Left Direction
         state = 2
         play = true;
     }
-    else if ((e.keyCode == '39' || e.keyCode == '68') && state != 2 && state != 0) {
+    else if ((e.keyCode == '39' || e.keyCode == '68' || customBtn == 0) && state != 2 && state != 0) {
         // Right Direction
         state = 0;
         play = true;

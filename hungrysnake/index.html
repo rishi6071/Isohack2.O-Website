@@ -11,6 +11,14 @@
     <title>Snake Game</title>
     <link rel="icon" href="./assets/img/snake.svg" type="image/ico">
 
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <!-- CSS Link Tags -->
     <link rel="stylesheet" href="./assets/css/index.css">
 
@@ -29,7 +37,27 @@
     <!-- Snake Area (Something on which you can draw)  -->
     <canvas id="arena" width="500" height="500">Your Browser does not supports Canvas</canvas>
 
-    <script src="./assets/js/index.js"></script>
+    <!-- Buttons to Control When Screen Resolution is of Mobile or iPad -->
+    <div id="buttonControl" class="mx-auto mb-4">
+        <div>
+            <button type="button" class="btn btn-secondary px-4" id="upBtn"><i
+                    class="material-icons">keyboard_arrow_up</i></button>
+        </div>
+
+        <div class="my-2">
+            <button type="button" class="btn btn-secondary px-4 mr-2" id="leftBtn"><i
+                class="material-icons">keyboard_arrow_left</i></button>
+            <button type="button" class="btn btn-secondary px-4" id="rightBtn"><i
+                class="material-icons">keyboard_arrow_right</i></button>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-secondary px-4" id="downBtn"><i
+                class="material-icons">keyboard_arrow_down</i></button>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js" defer></script>
 </body>
 
 </html>

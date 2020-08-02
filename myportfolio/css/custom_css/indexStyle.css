@@ -194,9 +194,9 @@ form#msgeForm .btn-primary {
 }
 
 .btn-primary:hover {
-    -webkit-box-shadow: -1px 5px 15px rgba(0,0,0,0.4);
-    -moz-box-shadow: -1px 5px 15px rgba(0,0,0,0.4);
-    box-shadow:-1px 5px 15px rgba(0,0,0,0.4);
+    -webkit-box-shadow: -1px 5px 15px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 5px 15px rgba(0,0,0,0.2);
+    box-shadow:-1px 5px 15px rgba(0,0,0,0.2);
 }
 
 .contact-details {

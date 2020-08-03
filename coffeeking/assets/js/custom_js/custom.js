@@ -16,4 +16,5 @@ $(document).ready(function () {
     padding: 40
   });
   $('.fixed-action-btn').floatingActionButton();
+  $('.materialboxed').materialbox();
 });

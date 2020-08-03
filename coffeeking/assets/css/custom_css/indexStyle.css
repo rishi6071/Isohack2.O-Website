@@ -109,6 +109,20 @@
     padding-top: 55px;
 }
 
+/* || PAGINATION */
+.pagination .active {
+    background-color: #4b301b !important;
+}
+
+
+/* || GALLERY */
+#gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 /* || FIXED FLOATING BUTTON */
 
 .fixed-action-btn > a {

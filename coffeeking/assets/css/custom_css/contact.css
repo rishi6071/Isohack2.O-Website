@@ -74,3 +74,14 @@ iframe {
     border-bottom: 1px solid crimson !important;
     box-shadow: 0 1px 0 0 crimson !important;
 }
+
+/* || Checkbox */
+.filled-in[type="checkbox"].filled-in:checked + span:not(.lever):after 
+{
+    border: 2px solid #4b301b !important;  
+    background-color: #4b301b !important;
+}
+
+input[type="checkbox"] + span {
+    color: #4b301b;
+}

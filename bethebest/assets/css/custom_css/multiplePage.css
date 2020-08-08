@@ -1,7 +1,9 @@
 @charset "utf-8";
-
 /* ------------------- || EDIT PROFILE PAGE ------------------- */
-#account-profile { background-color: rgba(128, 128, 128, 0.1); }
+
+#account-profile {
+    background-color: rgba(128, 128, 128, 0.1);
+}
 
 label {
     font-size: 0.9em;
@@ -9,15 +11,15 @@ label {
     margin-bottom: 2px;
 }
 
-
 /* ------------------- || THANKU PAGE ------------------- */
+
 .back-to-shop {
     font-size: 14px !important;
     font-variant: small-caps;
 }
 
-
 /* ------------------- || AUTHORS PAGE ------------------- */
+
 #famous-authors .media {
     border: 1px solid rgba(128, 128, 128, 0.15);
     border-radius: 5px;
@@ -27,6 +29,7 @@ label {
     text-decoration: none;
     color: #6C757D;
 }
+
 #famous-authors .media-heading:hover {
     color: black;
 }
@@ -40,8 +43,8 @@ label {
     border-radius: 50%;
 }
 
-
 /* ------------------- || REGISTER PAGE ------------------- */
+
 a.account-exist, a.terms-conditions, a.hoverLink {
     text-decoration: none;
 }
@@ -52,22 +55,28 @@ a.account-exist:hover, a.hoverLink:hover {
 
 input[type="checkbox"]:hover {
     cursor: pointer !important;
-} 
-
+}
 
 /* ------------------- || CHECKOUT PAGE ------------------- */
+
 a.pay {
     text-decoration: none;
 }
 
-
 /* ------------------- || FAQS PAGE ------------------- */
+
 .service-nav {
     margin-top: 20px;
     float: right;
 }
-a.faqOpt:hover{
-    color:grey;
+
+a.faqOpt {
+    color: black;
+    font-size: 10px !important;
+}
+
+a.faqOpt:hover {
+    color: grey;
 }
 
 .service-item {
@@ -83,39 +92,49 @@ a.faqOpt:hover{
     color: darkslategray;
 }
 
+@media screen and (max-width:576px) {
+    .service-nav {
+        float: left;
+    }
+}
+
 .question a {
     text-decoration: none;
 }
 
 @keyframes faqs {
     from {
-      margin-left: 500px;
-      opacity: 0;
+        margin-top: 500px;
+        opacity: 0;
     }
     to {
-      margin-left: 0;
-      opacity: 0.8;
+        margin-top: 0;
+        opacity: 0.8;
     }
-  }
+}
 
-  #opacityEffect > div {
+#opacityEffect>div {
     animation-name: faqs;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-  }
-
+}
 
 /* ------------------- || SHOP PAGE ------------------- */
 
 .shop-category {
-    font-size:13px;
+    font-size: 13px;
     border: 0;
     line-height: normal;
 }
 
-.shop-category a { text-decoration: none; }
-.shop-category a:hover { color: rebeccapurple; }
+.shop-category a {
+    text-decoration: none;
+}
+
+.shop-category a:hover {
+    color: rebeccapurple;
+}
 
 #filter-form input {
     vertical-align: -10px !important;
@@ -127,4 +146,3 @@ a.faqOpt:hover{
         margin: 0 auto;
     }
 }
-

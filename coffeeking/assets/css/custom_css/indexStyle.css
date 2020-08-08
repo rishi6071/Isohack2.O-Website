@@ -63,12 +63,12 @@
 }
 
 .parallax-container {
-    height: 450px;
+    height: 500px;
 }
 
 @media screen and (max-width:576px) {
     .parallax-container {
-        height: 300px;
+        height: 450px;
     }
 }
 

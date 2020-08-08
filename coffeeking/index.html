@@ -60,7 +60,7 @@
     <!-- Large Screen Dropdown Structure -->
     <ul id="nav-dropdown-1" class="dropdown-content">
       <li><a href="./contact.html">Contact Us</a></li>
-      <li><a href="#">FAQs</a></li>
+      <li><a href="./faqs.html">FAQs</a></li>
     </ul>
     <ul id="nav-dropdown-2" class="dropdown-content">
       <li><a href="#">Edit Profile</a></li>
@@ -71,7 +71,7 @@
     <!-- Mobile Screen Dropdown Structure -->
     <ul id="sidenav-dropdown-1" class="dropdown-content">
       <li><a href="./contact.html">Contact Us</a></li>
-      <li><a href="#">FAQs</a></li>
+      <li><a href="./faqs.html">FAQs</a></li>
     </ul>
     <ul id="sidenav-dropdown-2" class="dropdown-content">
       <li><a href="#">Edit Profile</a></li>
@@ -81,9 +81,20 @@
 
     <!-- Side Nav -->
     <ul class="sidenav" id="mobile-demo">
-      <li class="active"><a href="./index.html">Home</a></li>
+      <li>
+        <div class="user-view">
+          <div class="background drk">
+            <img
+              src="./assets/img/sidenav/userSidenav.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="./assets/img/sidenav/rishu.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="./index.html">Home</a></li>
       <li><a href="./shop.html">Shop</a></li>
-      <li><a href="./about.html">About</a></li>
+      <li class="active"><a href="./about.html">About</a></li>
       <!-- Dropdown Trigger -->
       <li><a class="dropdown-trigger" href="#" data-target="sidenav-dropdown-1">Help<i
             class="material-icons right">arrow_drop_down</i></a></li>
@@ -347,7 +358,8 @@
           </div>
           <div class="col m6 s12">
             <p class="right mt-2">
-              <a class="grey-text text-lighten-4" href="#!" title="Facebook"><i class="material-icons">facebook</i></a></a>
+              <a class="grey-text text-lighten-4" href="#!" title="Facebook"><i
+                  class="material-icons">facebook</i></a></a>
               <a class="grey-text text-lighten-4" href="#!" title="Email"><i class="material-icons">email</i></a></a>
             </p>
           </div>
@@ -366,7 +378,8 @@
       </a>
       <ul>
         <li><a title="Insert Chart" class="btn-floating red ripple"><i class="material-icons">insert_chart</i></a></li>
-        <li><a title="Quote" class="btn-floating yellow darken-1 ripple"><i class="material-icons">format_quote</i></a></li>
+        <li><a title="Quote" class="btn-floating yellow darken-1 ripple"><i class="material-icons">format_quote</i></a>
+        </li>
         <li><a title="Publish" class="btn-floating green ripple"><i class="material-icons">publish</i></a></li>
         <li><a title="Attach File" class="btn-floating blue ripple"><i class="material-icons">attach_file</i></a></li>
       </ul>

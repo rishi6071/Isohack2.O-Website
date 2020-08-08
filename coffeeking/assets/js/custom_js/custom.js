@@ -8,6 +8,7 @@ $(document).ready(function () {
   $('.parallax').parallax();
   $('.fixed-action-btn').floatingActionButton();
   $('.materialboxed').materialbox();
+  $('.tabs').tabs();
 
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,

@@ -123,6 +123,20 @@
     display: block;
 }
 
+/* ------------- || FAQs ------------- */
+
+.tab a {
+    color: #4b301b !important;
+}
+
+.tabs .active {
+    background: #efebe9 !important;
+}
+
+.tabs .indicator {
+    background-color: #a1887f;
+}
+
 /* ------------- || FOOTER ------------- */
 
 footer {
@@ -142,13 +156,13 @@ footer {
 @media screen and (min-width:601px) {
     .footer-copyright .right {
         margin-right: 50px;
-    }   
+    }
 }
 
 @media screen and (max-width:600px) {
     .footer-copyright .right {
         float: left !important;
-    }   
+    }
 }
 
 /* ------------- || FIXED FLOATING BUTTON ------------- */

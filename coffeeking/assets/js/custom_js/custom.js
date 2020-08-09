@@ -9,6 +9,7 @@ $(document).ready(function () {
   $('.fixed-action-btn').floatingActionButton();
   $('.materialboxed').materialbox();
   $('.tabs').tabs();
+  $('.collapsible').collapsible();
 
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,

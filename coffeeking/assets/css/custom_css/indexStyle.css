@@ -125,12 +125,17 @@
 
 /* ------------- || FAQs ------------- */
 
+.tabs {
+    background: rgba(239,235,233,0.5);
+}
+
 .tab a {
     color: #4b301b !important;
 }
 
 .tabs .active {
-    background: #efebe9 !important;
+    background: rgba(215,204,200,0.6) !important;
+    font-weight: bolder;
 }
 
 .tabs .indicator {

@@ -10,6 +10,7 @@ $(document).ready(function () {
   $('.materialboxed').materialbox();
   $('.tabs').tabs();
   $('.collapsible').collapsible();
+  $('.datepicker').datepicker();
 
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,

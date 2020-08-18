@@ -68,12 +68,12 @@ div#banner-inner p {
 
 /******** || EXPERIENCE & EDUCATION COMMUNITY ********/
 .thematic-break {
-    border-bottom: 1px solid #182153;
+    border-bottom: 0.5px solid #182153 !important;
 }
-
+/* 
 .thematic-position {
-    border-width: 0.5px;
-}
+    border-width: 0.3px;
+} */
 
 /* || In Experience Portion */
 .date-position {
@@ -86,12 +86,20 @@ div#banner-inner p {
 }
 
 .tech-logo {
-    width: 45%;
-    height: 60px;
+    width: 50%;
+    height: 65px;
     display: block;
     margin: 0 0 0 auto;
     border-radius: 5px;
     object-fit: cover;
+}
+
+.technocolab-logo {
+    transform: scale(1.5);
+}
+
+.putatoe-logo {
+    width: 40%;
 }
 
 @media screen and (max-width:992px) {

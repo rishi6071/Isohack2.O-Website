@@ -94,14 +94,6 @@ div#banner-inner p {
     object-fit: cover;
 }
 
-.technocolab-logo {
-    transform: scale(1.5);
-}
-
-.putatoe-logo {
-    width: 40%;
-}
-
 @media screen and (max-width:992px) {
     .amstech-logo {
         object-fit: contain;

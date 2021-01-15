@@ -12,7 +12,7 @@
   align-items: center;
   transform: translateY(-60px);
   font-family: 'Montserrat', sans-serif;
-  z-index: -1;
+  z-index: -100;
 }
 
 #wrapper {
@@ -305,5 +305,27 @@ skew to change the 'thickness' of the glitch.*/
   }
   100% {
     transform: skew(-4deg);
+  }
+}
+
+/* Devfolio Apply Button */
+.apply-button {
+  animation-name: devfolioScroll !important;
+  animation-duration: 1s !important;
+  animation-delay: 1s !important;
+  animation-fill-mode: forwards !important;
+  animation-timing-function: ease-in-out !important;
+  z-index: 2000 !important;
+  opacity: 0 !important;
+}
+
+@keyframes devfolioScroll {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(-100px) !important;
+  }
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
   }
 }
